@@ -1,0 +1,60 @@
+@font-face {
+	font-family: 'ALS Schlange Sans Bold';
+	src: local('ALS Schlange Sans Bold'), local('ALS-Schlange-Sans-Bold'),
+			url('../assets/font/ALSSchlangesans-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ALS Schlange Sans Black';
+	src: local('ALS Schlange Sans Black'), local('ALS-Schlange-Sans-Black'),
+			url('../assets/font/ALSSchlangesans-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+body {
+	font-family: 'ALS Schlange Sans';
+}
+
+@function vwl($value, $base: 1920) {
+	@return $value / $base * 100vw;
+}
+
+@function vwt($value, $base: 1024) {
+	@return $value / $base * 100vw;
+}
+
+@function vwp($value, $base: 390) {
+	@return $value / $base * 100vw;
+}
+
+@mixin fontSettings($s,$w,$h,$d,$c) {
+	font-size: $s;
+	font-weight: $w;
+	line-height: $h;
+	text-decoration: $d;
+	color: $c;
+}
+
+@mixin sizeSettings($w,$h) {
+	width: $w;
+	height: $h;
+}
+
+@mixin positionSettings($p,$t,$r,$b,$l) {
+	position: $p;
+	top: $t;
+	right: $r;
+	bottom: $b;
+	left: $l;
+}
+
+@mixin flexSettings($d,$f,$a,$j,$g){
+	display: $d;
+	flex-direction: $f;
+	align-items: $a;
+	justify-content: $j;
+	gap: $g;
+}

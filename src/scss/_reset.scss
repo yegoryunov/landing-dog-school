@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	display: block;
+}
+
+head {
+	display: none;
+}
+
+body {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+figcaption, footer, header,
+nav, section, main {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+div, span, h1, h2, h3, h4, h5, h6, p,
+pre, a, code, img, samp, strong, sub,
+sup, var, b, dl, dt, dd, ol, ul, li,
+table, caption, tbody, tfoot, thead,
+tr, th, td, mark {
+	margin: 0;
+	padding: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input {
+	margin: 0
+}
