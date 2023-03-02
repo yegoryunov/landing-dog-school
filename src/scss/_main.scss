@@ -227,7 +227,7 @@
 		@media (max-width: 390px) {
 			@include fontSettings(vwp(32),900,vwp(40),none,$white-color);
 			padding-top: vwp(32);
-			padding-left: vwp(40);
+			padding-left: vwp(20);
 		}
 	}
 	&__card {
@@ -322,4 +322,91 @@
 	}
 }
 // Reviews end
+
+// Price start
+.price-row {
+	@include flexSettings(flex,row,center,center,vwl(32));
+	padding-top: vwl(32);
+	@media (max-width: 1024px) {
+		@include flexSettings(flex,column,center,center,vwt(24));
+		padding-top: vwt(24);
+	}
+	@media (max-width: 390px) {
+		@include flexSettings(flex,column,center,center,vwp(16));
+		padding-top: vwp(16);
+	}
+}
+
+.price-block {
+	@include sizeSettings(vwl(912), vwl(912));
+	background-color: $secondary-color;
+	border-radius: vwl(64);
+	position: relative;
+	@media (max-width: 1024px) {
+		@include sizeSettings(vwt(976), vwt(976));
+		border-radius: vwt(48);
+	}
+	@media (max-width: 390px) {
+		@include sizeSettings(vwp(358), vwp(358));
+		border-radius: vwp(20);
+	}
+	&__heading {
+		@include fontSettings(vwl(96),900,vwl(120),none,$white-color);
+		padding-top: vwl(96);
+		padding-left: vwl(48);
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(96),900,vwt(120),none,$white-color);
+			padding-top: vwt(82);
+			padding-left: vwt(48);
+		}
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(32),900,vwp(40),none,$white-color);
+			padding-top: vwp(32);
+			padding-left: vwp(20);
+		}
+	}
+	&__text {
+		@include fontSettings(vwl(48),700,vwl(68),none,$white-color);
+		padding-top: vwl(89);
+		padding-left: vwl(64);
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(48),700,vwt(68),none,$white-color);
+			padding-top: vwt(135);
+			padding-left: vwt(69);
+		}
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(16),700,vwp(24),none,$white-color);
+			padding-top: vwp(48);
+			padding-left: vwp(25);
+		}
+	}
+	&__btn-start-learn {
+		@include fontSettings(vwl(40),700,vwl(47),none,$white-color);
+		background-color: $primary-color;
+		border: 0;
+		border-radius: vwl(100);
+		padding: vwl(24) vwl(322);
+		margin-top: vwl(68);
+		margin-left: vwl(64);
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(40),700,vwt(47),none,$white-color);
+			border-radius: vwt(100);
+			padding: vwt(28) vwt(350);
+			margin-top: vwt(68);
+			margin-left: vwt(69);
+		}
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(16),700,vwp(19),none,$white-color);
+			border-radius: vwp(100);
+			padding: vwp(10) vwp(126);
+			margin-top: vwp(32);
+			margin-left: vwp(25);
+		}
+	}
+	&__icon-sale {
+		@include sizeSettings(vwl(164),vwl(164));
+		@include positionSettings(absolute,320px,none,none,684px);
+		transform: rotate(8deg);
+	}
+}
 

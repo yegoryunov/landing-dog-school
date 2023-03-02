@@ -442,7 +442,7 @@ pre {
         text-decoration: none;
         color: #FEFEFE;
         padding-top: 8.20513vw;
-        padding-left: 10.25641vw; } }
+        padding-left: 5.12821vw; } }
   .reviews-block__card {
     width: 42.5vw;
     height: 11.30208vw;
@@ -581,3 +581,139 @@ pre {
       width: 91.79487vw;
       height: 91.79487vw;
       border-radius: 5.12821vw; } }
+
+.price-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.66667vw;
+  padding-top: 1.66667vw; }
+  @media (max-width: 1024px) {
+    .price-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.34375vw;
+      padding-top: 2.34375vw; } }
+  @media (max-width: 390px) {
+    .price-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4.10256vw;
+      padding-top: 4.10256vw; } }
+
+.price-block {
+  width: 47.5vw;
+  height: 47.5vw;
+  background-color: #FFC200;
+  border-radius: 3.33333vw;
+  position: relative; }
+  @media (max-width: 1024px) {
+    .price-block {
+      width: 95.3125vw;
+      height: 95.3125vw;
+      border-radius: 4.6875vw; } }
+  @media (max-width: 390px) {
+    .price-block {
+      width: 91.79487vw;
+      height: 91.79487vw;
+      border-radius: 5.12821vw; } }
+  .price-block__heading {
+    font-size: 5vw;
+    font-weight: 900;
+    line-height: 6.25vw;
+    text-decoration: none;
+    color: #FEFEFE;
+    padding-top: 5vw;
+    padding-left: 2.5vw; }
+    @media (max-width: 1024px) {
+      .price-block__heading {
+        font-size: 9.375vw;
+        font-weight: 900;
+        line-height: 11.71875vw;
+        text-decoration: none;
+        color: #FEFEFE;
+        padding-top: 8.00781vw;
+        padding-left: 4.6875vw; } }
+    @media (max-width: 390px) {
+      .price-block__heading {
+        font-size: 8.20513vw;
+        font-weight: 900;
+        line-height: 10.25641vw;
+        text-decoration: none;
+        color: #FEFEFE;
+        padding-top: 8.20513vw;
+        padding-left: 5.12821vw; } }
+  .price-block__text {
+    font-size: 2.5vw;
+    font-weight: 700;
+    line-height: 3.54167vw;
+    text-decoration: none;
+    color: #FEFEFE;
+    padding-top: 4.63542vw;
+    padding-left: 3.33333vw; }
+    @media (max-width: 1024px) {
+      .price-block__text {
+        font-size: 4.6875vw;
+        font-weight: 700;
+        line-height: 6.64062vw;
+        text-decoration: none;
+        color: #FEFEFE;
+        padding-top: 13.18359vw;
+        padding-left: 6.73828vw; } }
+    @media (max-width: 390px) {
+      .price-block__text {
+        font-size: 4.10256vw;
+        font-weight: 700;
+        line-height: 6.15385vw;
+        text-decoration: none;
+        color: #FEFEFE;
+        padding-top: 12.30769vw;
+        padding-left: 6.41026vw; } }
+  .price-block__btn-start-learn {
+    font-size: 2.08333vw;
+    font-weight: 700;
+    line-height: 2.44792vw;
+    text-decoration: none;
+    color: #FEFEFE;
+    background-color: #0071FC;
+    border: 0;
+    border-radius: 5.20833vw;
+    padding: 1.25vw 16.77083vw;
+    margin-top: 3.54167vw;
+    margin-left: 3.33333vw; }
+    @media (max-width: 1024px) {
+      .price-block__btn-start-learn {
+        font-size: 3.90625vw;
+        font-weight: 700;
+        line-height: 4.58984vw;
+        text-decoration: none;
+        color: #FEFEFE;
+        border-radius: 9.76562vw;
+        padding: 2.73438vw 34.17969vw;
+        margin-top: 6.64062vw;
+        margin-left: 6.73828vw; } }
+    @media (max-width: 390px) {
+      .price-block__btn-start-learn {
+        font-size: 4.10256vw;
+        font-weight: 700;
+        line-height: 4.87179vw;
+        text-decoration: none;
+        color: #FEFEFE;
+        border-radius: 25.64103vw;
+        padding: 2.5641vw 32.30769vw;
+        margin-top: 8.20513vw;
+        margin-left: 6.41026vw; } }
+  .price-block__icon-sale {
+    width: 8.54167vw;
+    height: 8.54167vw;
+    position: absolute;
+    top: 320px;
+    right: none;
+    bottom: none;
+    left: 684px;
+    transform: rotate(8deg); }
