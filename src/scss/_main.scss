@@ -72,7 +72,6 @@
 		border-radius: vwp(12);
 		margin: vwp(16) auto 0;
 	}
-
 	&__heading {
 		@include fontSettings(vwl(120),700,vwl(120),none,$white-color);
 		padding-top: vwl(93);
@@ -88,7 +87,6 @@
 			padding-left: vwp(16);
 		}
 	}
-
 	&__dop-text {
 		@include fontSettings(vwl(40),700,vwl(47),none,$white-color);
 		background-color: $primary-color;
@@ -111,7 +109,6 @@
 			transform: matrix(1, -0.09, 0.09, 1, 0, 0);
 		}
 	}
-
 	&__dog {
 		@include sizeSettings(vwl(456), vwl(643));
 		@include positionSettings(absolute,vwl(315),none,none,vwl(1400));
@@ -190,5 +187,57 @@
 		}
 	}
 }
+// Hero end
 
+// Reviews start
+.reviews-row {
+	@include flexSettings(flex,row,center,center,vwl(32));
+	padding-top: vwl(32);
+}
+
+.reviews-block {
+	@include sizeSettings(vwl(912), vwl(912));
+	background-color: $primary-color;
+	border-radius: vwl(64);
+	&__heading {
+		@include fontSettings(vwl(96),900,vwl(120),none,$white-color);
+		padding-top: vwl(96);
+		padding-left: vwl(48);
+	}
+	&__card {
+		@include sizeSettings(vwl(816), vwl(217));
+		background-color: $orange-color;
+		border-radius: vwl(200);
+		margin: vwl(107) auto 0;
+		@include flexSettings(flex,row,center,flex-start,24px);
+		&-img {
+			@include sizeSettings(vwl(216), vwl(216));
+		}
+		&-review {
+			&-name {
+				@include fontSettings(vwl(48),700,vwl(56),none,$white-color);
+			}
+			&-text {
+				@include fontSettings(vwl(24),700,vwl(30),none,$white-color);
+			}
+		}
+	}
+	&__toggle {
+		padding-top: vwl(40);
+		@include flexSettings(flex,row,center,center,24px);
+		&-dot {
+			cursor: pointer;
+			height: vwl(28);
+			width: vwl(28);
+			background-color: $gray-color;
+			border-radius: 50%;
+		}
+	}
+}
+
+.building-block {
+	@include sizeSettings(vwl(912), vwl(912));
+	border-radius: vwl(64);
+}
+// Reviews end
 

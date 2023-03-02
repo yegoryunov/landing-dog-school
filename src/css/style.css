@@ -377,3 +377,69 @@ pre {
         color: #0071FC;
         padding-top: 1.02564vw;
         padding-left: 2.05128vw; } }
+
+.reviews-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.66667vw;
+  padding-top: 1.66667vw; }
+
+.reviews-block {
+  width: 47.5vw;
+  height: 47.5vw;
+  background-color: #0071FC;
+  border-radius: 3.33333vw; }
+  .reviews-block__heading {
+    font-size: 5vw;
+    font-weight: 900;
+    line-height: 6.25vw;
+    text-decoration: none;
+    color: #FEFEFE;
+    padding-top: 5vw;
+    padding-left: 2.5vw; }
+  .reviews-block__card {
+    width: 42.5vw;
+    height: 11.30208vw;
+    background-color: #DFAD0C;
+    border-radius: 10.41667vw;
+    margin: 5.57292vw auto 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px; }
+    .reviews-block__card-img {
+      width: 11.25vw;
+      height: 11.25vw; }
+    .reviews-block__card-review-name {
+      font-size: 2.5vw;
+      font-weight: 700;
+      line-height: 2.91667vw;
+      text-decoration: none;
+      color: #FEFEFE; }
+    .reviews-block__card-review-text {
+      font-size: 1.25vw;
+      font-weight: 700;
+      line-height: 1.5625vw;
+      text-decoration: none;
+      color: #FEFEFE; }
+  .reviews-block__toggle {
+    padding-top: 2.08333vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px; }
+    .reviews-block__toggle-dot {
+      cursor: pointer;
+      height: 1.45833vw;
+      width: 1.45833vw;
+      background-color: #B2B2BB;
+      border-radius: 50%; }
+
+.building-block {
+  width: 47.5vw;
+  height: 47.5vw;
+  border-radius: 3.33333vw; }
