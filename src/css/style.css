@@ -71,6 +71,14 @@ button {
       justify-content: center;
       gap: 34.76562vw;
       padding-top: 2.34375vw; } }
+  @media (max-width: 390px) {
+    .header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 16.41026vw;
+      padding-top: 3.07692vw; } }
   .header__button-about-school {
     font-size: 2.08333vw;
     font-weight: 700;
@@ -92,6 +100,17 @@ button {
         border: 0;
         border-radius: 9.76562vw;
         padding: 1.95312vw 3.90625vw; } }
+    @media (max-width: 390px) {
+      .header__button-about-school {
+        font-size: 3.07692vw;
+        font-weight: 700;
+        line-height: 3.58974vw;
+        text-decoration: none;
+        color: #FEFEFE;
+        background-color: #0071FC;
+        border: 0;
+        border-radius: 25.64103vw;
+        padding: 2.05128vw 4.10256vw; } }
   .header__button-start-learn {
     font-size: 2.08333vw;
     font-weight: 700;
@@ -113,3 +132,14 @@ button {
         border: 0;
         border-radius: 9.76562vw;
         padding: 1.95312vw 3.90625vw; } }
+    @media (max-width: 390px) {
+      .header__button-start-learn {
+        font-size: 3.07692vw;
+        font-weight: 700;
+        line-height: 3.58974vw;
+        text-decoration: none;
+        color: #FEFEFE;
+        background-color: #0071FC;
+        border: 0;
+        border-radius: 25.64103vw;
+        padding: 2.05128vw 4.10256vw; } }

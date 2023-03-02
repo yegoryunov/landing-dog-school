@@ -6,6 +6,10 @@
 		@include flexSettings(flex,row,center,center,vwt(356));
 		padding-top: vwt(24);
 	}
+	@media (max-width: 390px) {
+		@include flexSettings(flex,row,center,center,vwp(64));
+		padding-top: vwp(12);
+	}
 		&__button-about-school {
 			@include fontSettings(vwl(40),700,vwl(47),none,$white-color);
 			background-color: $primary-color;
@@ -18,6 +22,13 @@
 				border: 0;
 				border-radius: vwt(100);
 				padding: vwt(20) vwt(40);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(12),700,vwp(14),none,$white-color);
+				background-color: $primary-color;
+				border: 0;
+				border-radius: vwp(100);
+				padding: vwp(8) vwp(16);
 			}
 		}
 		&__button-start-learn {
@@ -32,6 +43,13 @@
 				border: 0;
 				border-radius: vwt(100);
 				padding: vwt(20) vwt(40);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(12),700,vwp(14),none,$white-color);
+				background-color: $primary-color;
+				border: 0;
+				border-radius: vwp(100);
+				padding: vwp(8) vwp(16);
 			}
 		}
 }
