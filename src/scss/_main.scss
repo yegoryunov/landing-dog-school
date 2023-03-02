@@ -193,44 +193,118 @@
 .reviews-row {
 	@include flexSettings(flex,row,center,center,vwl(32));
 	padding-top: vwl(32);
+	@media (max-width: 1024px) {
+		@include flexSettings(flex,column,center,center,vwt(24));
+		padding-top: vwt(24);
+	}
+	@media (max-width: 390px) {
+		@include flexSettings(flex,column,center,center,vwp(16));
+		padding-top: vwp(16);
+	}
 }
 
 .reviews-block {
 	@include sizeSettings(vwl(912), vwl(912));
 	background-color: $primary-color;
 	border-radius: vwl(64);
+	@media (max-width: 1024px) {
+		@include sizeSettings(vwt(976), vwt(976));
+		border-radius: vwt(48);
+	}
+	@media (max-width: 390px) {
+		@include sizeSettings(vwp(358), vwp(358));
+		border-radius: vwp(20);
+	}
 	&__heading {
 		@include fontSettings(vwl(96),900,vwl(120),none,$white-color);
 		padding-top: vwl(96);
 		padding-left: vwl(48);
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(96),900,vwt(120),none,$white-color);
+			padding-top: vwt(82);
+			padding-left: vwt(48);
+		}
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(32),900,vwp(40),none,$white-color);
+			padding-top: vwp(32);
+			padding-left: vwp(40);
+		}
 	}
 	&__card {
 		@include sizeSettings(vwl(816), vwl(217));
 		background-color: $orange-color;
 		border-radius: vwl(200);
 		margin: vwl(107) auto 0;
-		@include flexSettings(flex,row,center,flex-start,24px);
+		@include flexSettings(flex,row,center,flex-start,vwl(24));
+		@media (max-width: 1024px) {
+			@include sizeSettings(vwt(873), vwt(233));
+			border-radius: vwt(200);
+			margin: vwt(120) auto 0;
+			@include flexSettings(flex,row,center,flex-start,vwt(24));
+		}
+		@media (max-width: 390px) {
+			@include sizeSettings(vwp(320), vwp(84));
+			border-radius: vwp(80);
+			margin: vwp(50) auto 0;
+			@include flexSettings(flex,row,center,flex-start,vwp(12));
+		}
 		&-img {
 			@include sizeSettings(vwl(216), vwl(216));
+			@media (max-width: 1024px) {
+				@include sizeSettings(vwt(232), vwt(232));
+			}
+			@media (max-width: 390px) {
+				@include sizeSettings(vwp(84), vwp(84));
+			}
 		}
 		&-review {
 			&-name {
 				@include fontSettings(vwl(48),700,vwl(56),none,$white-color);
+				@media (max-width: 1024px) {
+					@include fontSettings(vwt(48),700,vwt(64),none,$white-color);
+				}
+				@media (max-width: 390px) {
+					@include fontSettings(vwp(16),700,vwp(22),none,$white-color);
+				}
 			}
 			&-text {
 				@include fontSettings(vwl(24),700,vwl(30),none,$white-color);
+				@media (max-width: 1024px) {
+					@include fontSettings(vwt(24),700,vwt(32),none,$white-color);
+				}
+				@media (max-width: 390px) {
+					@include fontSettings(vwp(8),700,vwp(12),none,$white-color);
+				}
 			}
 		}
 	}
 	&__toggle {
 		padding-top: vwl(40);
-		@include flexSettings(flex,row,center,center,24px);
+		@include flexSettings(flex,row,center,center,vwl(24));
+		@media (max-width: 1024px) {
+			padding-top: vwt(48);
+			@include flexSettings(flex,row,center,center,vwt(24));
+		}
+		@media (max-width: 390px) {
+			padding-top: vwp(20);
+			@include flexSettings(flex,row,center,center,vwp(10));
+		}
 		&-dot {
 			cursor: pointer;
 			height: vwl(28);
 			width: vwl(28);
 			background-color: $gray-color;
-			border-radius: 50%;
+			border-radius: vwl(100);
+			@media (max-width: 1024px) {
+				height: vwt(32);
+				width: vwt(32);
+				border-radius: vwt(100);
+			}
+			@media (max-width: 390px) {
+				height: vwp(12);
+				width: vwp(12);
+				border-radius: vwp(100);
+			}
 		}
 	}
 }
@@ -238,6 +312,14 @@
 .building-block {
 	@include sizeSettings(vwl(912), vwl(912));
 	border-radius: vwl(64);
+	@media (max-width: 1024px) {
+		@include sizeSettings(vwt(976), vwt(976));
+		border-radius: vwt(48);
+	}
+	@media (max-width: 390px) {
+		@include sizeSettings(vwp(358), vwp(358));
+		border-radius: vwp(20);
+	}
 }
 // Reviews end
 
