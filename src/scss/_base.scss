@@ -18,6 +18,10 @@ body {
 	font-family: 'ALS Schlange Sans';
 }
 
+button {
+	font-family: 'ALS Schlange Sans';
+}
+
 @function vwl($value, $base: 1920) {
 	@return $value / $base * 100vw;
 }

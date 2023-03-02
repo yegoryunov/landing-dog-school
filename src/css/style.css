@@ -52,3 +52,64 @@ input {
 
 body {
   font-family: 'ALS Schlange Sans'; }
+
+button {
+  font-family: 'ALS Schlange Sans'; }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 46.77083vw;
+  padding-top: 2.08333vw; }
+  @media (max-width: 1024px) {
+    .header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 34.76562vw;
+      padding-top: 2.34375vw; } }
+  .header__button-about-school {
+    font-size: 2.08333vw;
+    font-weight: 700;
+    line-height: 2.44792vw;
+    text-decoration: none;
+    color: #FEFEFE;
+    background-color: #0071FC;
+    border: 0;
+    border-radius: 5.20833vw;
+    padding: 1.25vw 2.5vw; }
+    @media (max-width: 1024px) {
+      .header__button-about-school {
+        font-size: 2.34375vw;
+        font-weight: 700;
+        line-height: 2.73438vw;
+        text-decoration: none;
+        color: #FEFEFE;
+        background-color: #0071FC;
+        border: 0;
+        border-radius: 9.76562vw;
+        padding: 1.95312vw 3.90625vw; } }
+  .header__button-start-learn {
+    font-size: 2.08333vw;
+    font-weight: 700;
+    line-height: 2.44792vw;
+    text-decoration: none;
+    color: #FEFEFE;
+    background-color: #0071FC;
+    border: 0;
+    border-radius: 5.20833vw;
+    padding: 1.25vw 2.5vw; }
+    @media (max-width: 1024px) {
+      .header__button-start-learn {
+        font-size: 2.34375vw;
+        font-weight: 700;
+        line-height: 2.73438vw;
+        text-decoration: none;
+        color: #FEFEFE;
+        background-color: #0071FC;
+        border: 0;
+        border-radius: 9.76562vw;
+        padding: 1.95312vw 3.90625vw; } }

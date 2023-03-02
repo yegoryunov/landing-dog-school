@@ -1,1 +1,40 @@
 // Header start
+.header {
+	@include flexSettings(flex,row,center,center,vwl(898));
+	padding-top: vwl(40);
+	@media (max-width: 1024px) {
+		@include flexSettings(flex,row,center,center,vwt(356));
+		padding-top: vwt(24);
+	}
+		&__button-about-school {
+			@include fontSettings(vwl(40),700,vwl(47),none,$white-color);
+			background-color: $primary-color;
+			border: 0;
+			border-radius: vwl(100);
+			padding: vwl(24) vwl(48);
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(24),700,vwt(28),none,$white-color);
+				background-color: $primary-color;
+				border: 0;
+				border-radius: vwt(100);
+				padding: vwt(20) vwt(40);
+			}
+		}
+		&__button-start-learn {
+			@include fontSettings(vwl(40),700,vwl(47),none,$white-color);;
+			background-color: $primary-color;
+			border: 0;
+			border-radius: vwl(100);
+			padding: vwl(24) vwl(48);
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(24),700,vwt(28),none,$white-color);
+				background-color: $primary-color;
+				border: 0;
+				border-radius: vwt(100);
+				padding: vwt(20) vwt(40);
+			}
+		}
+}
+// Header end
+
+
