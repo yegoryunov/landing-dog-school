@@ -10,49 +10,185 @@
 		@include flexSettings(flex,row,center,center,vwp(64));
 		padding-top: vwp(12);
 	}
-		&__button-about-school {
-			@include fontSettings(vwl(40),700,vwl(47),none,$white-color);
+	&__button-about-school {
+		@include fontSettings(vwl(40),700,vwl(47),none,$white-color);
+		background-color: $primary-color;
+		border: 0;
+		border-radius: vwl(100);
+		padding: vwl(24) vwl(48);
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(24),700,vwt(28),none,$white-color);
 			background-color: $primary-color;
 			border: 0;
-			border-radius: vwl(100);
-			padding: vwl(24) vwl(48);
-			@media (max-width: 1024px) {
-				@include fontSettings(vwt(24),700,vwt(28),none,$white-color);
-				background-color: $primary-color;
-				border: 0;
-				border-radius: vwt(100);
-				padding: vwt(20) vwt(40);
-			}
-			@media (max-width: 390px) {
-				@include fontSettings(vwp(12),700,vwp(14),none,$white-color);
-				background-color: $primary-color;
-				border: 0;
-				border-radius: vwp(100);
-				padding: vwp(8) vwp(16);
-			}
+			border-radius: vwt(100);
+			padding: vwt(20) vwt(40);
 		}
-		&__button-start-learn {
-			@include fontSettings(vwl(40),700,vwl(47),none,$white-color);;
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(12),700,vwp(14),none,$white-color);
 			background-color: $primary-color;
 			border: 0;
-			border-radius: vwl(100);
-			padding: vwl(24) vwl(48);
-			@media (max-width: 1024px) {
-				@include fontSettings(vwt(24),700,vwt(28),none,$white-color);
-				background-color: $primary-color;
-				border: 0;
-				border-radius: vwt(100);
-				padding: vwt(20) vwt(40);
-			}
-			@media (max-width: 390px) {
-				@include fontSettings(vwp(12),700,vwp(14),none,$white-color);
-				background-color: $primary-color;
-				border: 0;
-				border-radius: vwp(100);
-				padding: vwp(8) vwp(16);
-			}
+			border-radius: vwp(100);
+			padding: vwp(8) vwp(16);
 		}
+	}
+	&__button-start-learn {
+		@include fontSettings(vwl(40),700,vwl(47),none,$white-color);;
+		background-color: $primary-color;
+		border: 0;
+		border-radius: vwl(100);
+		padding: vwl(24) vwl(48);
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(24),700,vwt(28),none,$white-color);
+			background-color: $primary-color;
+			border: 0;
+			border-radius: vwt(100);
+			padding: vwt(20) vwt(40);
+		}
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(12),700,vwp(14),none,$white-color);
+			background-color: $primary-color;
+			border: 0;
+			border-radius: vwp(100);
+			padding: vwp(8) vwp(16);
+		}
+	}
 }
 // Header end
+
+// Hero start 
+.hero {
+	background-color: $secondary-color;
+	@include sizeSettings(vwl(1856), vwl(980));
+	border-radius: vwl(64);
+	margin: vwl(32) auto 0;
+	position: relative;
+	@media (max-width: 1024px) {
+		@include sizeSettings(vwt(976), vwt(516));
+		border-radius: vwt(32);
+		margin: vwt(24) auto 0;
+	}
+	@media (max-width: 390px) {
+		@include sizeSettings(vwp(358), vwp(190));
+		border-radius: vwp(12);
+		margin: vwp(16) auto 0;
+	}
+
+	&__heading {
+		@include fontSettings(vwl(120),700,vwl(120),none,$white-color);
+		padding-top: vwl(93);
+		padding-left: vwl(80);
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(64),700,vwt(68),none,$white-color);
+			padding-top: vwt(52);
+			padding-left: vwt(40);
+		}
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(24),700,vwp(24),none,$white-color);
+			padding-top: vwp(18);
+			padding-left: vwp(16);
+		}
+	}
+
+	&__dop-text {
+		@include fontSettings(vwl(40),700,vwl(47),none,$white-color);
+		background-color: $primary-color;
+		padding: vwl(24) vwl(48);
+		border-radius: vwl(100);
+		@include positionSettings(absolute,vwl(292),none,none,vwl(820));
+		transform: rotate(-6.38deg);
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(20),700,vwt(23),none,$white-color);
+			padding: vwt(14) vwt(28);
+			border-radius: vwt(100);
+			@include positionSettings(absolute,vwt(168),none,none,vwt(434));
+			transform: matrix(1, -0.06, 0.06, 1, 0, 0);
+		}
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(8),700,vwp(9),none,$white-color);
+			padding: vwp(4) vwp(8);
+			border-radius: vwp(100);
+			@include positionSettings(absolute,vwp(58),none,none,vwp(158));
+			transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+		}
+	}
+
+	&__dog {
+		@include sizeSettings(vwl(456), vwl(643));
+		@include positionSettings(absolute,vwl(315),none,none,vwl(1400));
+		@media (max-width: 1024px) {
+			@include sizeSettings(vwt(240), vwt(338));
+			@include positionSettings(absolute,vwt(162),none,none,vwt(736));
+		}
+		@media (max-width: 390px) {
+			@include sizeSettings(vwp(88), vwp(124));
+			@include positionSettings(absolute,vwp(58),none,none,vwp(270));
+		}
+	}
+}
+
+.card-reviews {
+	padding-top: vwl(32);
+	background-color: $white-color;
+	border-radius: vwl(40);
+	box-shadow: vwl(8) vwl(8) vwl(24) vwl(8) rgba(0, 0, 0, 0.08);
+	@include sizeSettings(vwl(640), vwl(360));
+	@include positionSettings(absolute,vwl(553),none,none,vwl(80));
+	@media (max-width: 1024px) {
+		padding-top: vwt(16);
+		border-radius: vwt(20);
+		box-shadow: vwt(4) vwt(4) vwt(12) vwt(4) rgba(0, 0, 0, 0.08);
+		@include sizeSettings(vwt(336), vwt(189));
+		@include positionSettings(absolute,vwt(291),none,none,vwt(40));
+	}
+	@media (max-width: 390px) {
+		padding-top: vwp(4);
+		border-radius: vwp(8);
+		box-shadow: vwp(1) vwp(1) vwp(4) vwp(1) rgba(0, 0, 0, 0.08);
+		@include sizeSettings(vwp(124), vwp(68));
+		@include positionSettings(absolute,vwp(108),none,none,vwp(16));
+	}
+	&__top {
+		@include flexSettings(flex,row,center,center,vwl(213));
+		@media (max-width: 1024px) {
+			@include flexSettings(flex,row,center,center,vwt(110));
+		}
+		@media (max-width: 390px) {
+			@include flexSettings(flex,row,center,center,vwp(43));
+		}
+		&-number {
+			@include fontSettings(vwl(96),700,vwl(120),none,$secondary-color);
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(48),700,vwt(64),none,$secondary-color);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(16),700,vwp(24),none,$secondary-color);
+			}
+		}
+		&-icon {
+			@include sizeSettings(vwl(108), vwl(108));
+			@media (max-width: 1024px) {
+				@include sizeSettings(vwt(56), vwt(56));
+			}
+			@media (max-width: 390px) {
+				@include sizeSettings(vwp(20), vwp(20));
+			}
+		}
+	}
+	&__text {
+		padding-top: vwl(12);
+		padding-left: vwl(40);
+		@include fontSettings(vwl(60),700,vwl(70),none,$primary-color);
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(32),700,vwt(37),none,$primary-color);
+			padding-top: vwt(12);
+			padding-left: vwt(24);
+		}
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(12),700,vwp(14),none,$primary-color);
+			padding-top: vwp(4);
+			padding-left: vwp(8);
+		}
+	}
+}
 
 

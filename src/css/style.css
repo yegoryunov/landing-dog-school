@@ -56,6 +56,9 @@ body {
 button {
   font-family: 'ALS Schlange Sans'; }
 
+pre {
+  font-family: 'ALS Schlange Sans'; }
+
 .header {
   display: flex;
   flex-direction: row;
@@ -143,3 +146,234 @@ button {
         border: 0;
         border-radius: 25.64103vw;
         padding: 2.05128vw 4.10256vw; } }
+
+.hero {
+  background-color: #FFC200;
+  width: 96.66667vw;
+  height: 51.04167vw;
+  border-radius: 3.33333vw;
+  margin: 1.66667vw auto 0;
+  position: relative; }
+  @media (max-width: 1024px) {
+    .hero {
+      width: 95.3125vw;
+      height: 50.39062vw;
+      border-radius: 3.125vw;
+      margin: 2.34375vw auto 0; } }
+  @media (max-width: 390px) {
+    .hero {
+      width: 91.79487vw;
+      height: 48.71795vw;
+      border-radius: 3.07692vw;
+      margin: 4.10256vw auto 0; } }
+  .hero__heading {
+    font-size: 6.25vw;
+    font-weight: 700;
+    line-height: 6.25vw;
+    text-decoration: none;
+    color: #FEFEFE;
+    padding-top: 4.84375vw;
+    padding-left: 4.16667vw; }
+    @media (max-width: 1024px) {
+      .hero__heading {
+        font-size: 6.25vw;
+        font-weight: 700;
+        line-height: 6.64062vw;
+        text-decoration: none;
+        color: #FEFEFE;
+        padding-top: 5.07812vw;
+        padding-left: 3.90625vw; } }
+    @media (max-width: 390px) {
+      .hero__heading {
+        font-size: 6.15385vw;
+        font-weight: 700;
+        line-height: 6.15385vw;
+        text-decoration: none;
+        color: #FEFEFE;
+        padding-top: 4.61538vw;
+        padding-left: 4.10256vw; } }
+  .hero__dop-text {
+    font-size: 2.08333vw;
+    font-weight: 700;
+    line-height: 2.44792vw;
+    text-decoration: none;
+    color: #FEFEFE;
+    background-color: #0071FC;
+    padding: 1.25vw 2.5vw;
+    border-radius: 5.20833vw;
+    position: absolute;
+    top: 15.20833vw;
+    right: none;
+    bottom: none;
+    left: 42.70833vw;
+    transform: rotate(-6.38deg); }
+    @media (max-width: 1024px) {
+      .hero__dop-text {
+        font-size: 1.95312vw;
+        font-weight: 700;
+        line-height: 2.24609vw;
+        text-decoration: none;
+        color: #FEFEFE;
+        padding: 1.36719vw 2.73438vw;
+        border-radius: 9.76562vw;
+        position: absolute;
+        top: 16.40625vw;
+        right: none;
+        bottom: none;
+        left: 42.38281vw;
+        transform: matrix(1, -0.06, 0.06, 1, 0, 0); } }
+    @media (max-width: 390px) {
+      .hero__dop-text {
+        font-size: 2.05128vw;
+        font-weight: 700;
+        line-height: 2.30769vw;
+        text-decoration: none;
+        color: #FEFEFE;
+        padding: 1.02564vw 2.05128vw;
+        border-radius: 25.64103vw;
+        position: absolute;
+        top: 14.87179vw;
+        right: none;
+        bottom: none;
+        left: 40.51282vw;
+        transform: matrix(1, -0.09, 0.09, 1, 0, 0); } }
+  .hero__dog {
+    width: 23.75vw;
+    height: 33.48958vw;
+    position: absolute;
+    top: 16.40625vw;
+    right: none;
+    bottom: none;
+    left: 72.91667vw; }
+    @media (max-width: 1024px) {
+      .hero__dog {
+        width: 23.4375vw;
+        height: 33.00781vw;
+        position: absolute;
+        top: 15.82031vw;
+        right: none;
+        bottom: none;
+        left: 71.875vw; } }
+    @media (max-width: 390px) {
+      .hero__dog {
+        width: 22.5641vw;
+        height: 31.79487vw;
+        position: absolute;
+        top: 14.87179vw;
+        right: none;
+        bottom: none;
+        left: 69.23077vw; } }
+
+.card-reviews {
+  padding-top: 1.66667vw;
+  background-color: #FEFEFE;
+  border-radius: 2.08333vw;
+  box-shadow: 0.41667vw 0.41667vw 1.25vw 0.41667vw rgba(0, 0, 0, 0.08);
+  width: 33.33333vw;
+  height: 18.75vw;
+  position: absolute;
+  top: 28.80208vw;
+  right: none;
+  bottom: none;
+  left: 4.16667vw; }
+  @media (max-width: 1024px) {
+    .card-reviews {
+      padding-top: 1.5625vw;
+      border-radius: 1.95312vw;
+      box-shadow: 0.39062vw 0.39062vw 1.17188vw 0.39062vw rgba(0, 0, 0, 0.08);
+      width: 32.8125vw;
+      height: 18.45703vw;
+      position: absolute;
+      top: 28.41797vw;
+      right: none;
+      bottom: none;
+      left: 3.90625vw; } }
+  @media (max-width: 390px) {
+    .card-reviews {
+      padding-top: 1.02564vw;
+      border-radius: 2.05128vw;
+      box-shadow: 0.25641vw 0.25641vw 1.02564vw 0.25641vw rgba(0, 0, 0, 0.08);
+      width: 31.79487vw;
+      height: 17.4359vw;
+      position: absolute;
+      top: 27.69231vw;
+      right: none;
+      bottom: none;
+      left: 4.10256vw; } }
+  .card-reviews__top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 11.09375vw; }
+    @media (max-width: 1024px) {
+      .card-reviews__top {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10.74219vw; } }
+    @media (max-width: 390px) {
+      .card-reviews__top {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 11.02564vw; } }
+    .card-reviews__top-number {
+      font-size: 5vw;
+      font-weight: 700;
+      line-height: 6.25vw;
+      text-decoration: none;
+      color: #FFC200; }
+      @media (max-width: 1024px) {
+        .card-reviews__top-number {
+          font-size: 4.6875vw;
+          font-weight: 700;
+          line-height: 6.25vw;
+          text-decoration: none;
+          color: #FFC200; } }
+      @media (max-width: 390px) {
+        .card-reviews__top-number {
+          font-size: 4.10256vw;
+          font-weight: 700;
+          line-height: 6.15385vw;
+          text-decoration: none;
+          color: #FFC200; } }
+    .card-reviews__top-icon {
+      width: 5.625vw;
+      height: 5.625vw; }
+      @media (max-width: 1024px) {
+        .card-reviews__top-icon {
+          width: 5.46875vw;
+          height: 5.46875vw; } }
+      @media (max-width: 390px) {
+        .card-reviews__top-icon {
+          width: 5.12821vw;
+          height: 5.12821vw; } }
+  .card-reviews__text {
+    padding-top: 0.625vw;
+    padding-left: 2.08333vw;
+    font-size: 3.125vw;
+    font-weight: 700;
+    line-height: 3.64583vw;
+    text-decoration: none;
+    color: #0071FC; }
+    @media (max-width: 1024px) {
+      .card-reviews__text {
+        font-size: 3.125vw;
+        font-weight: 700;
+        line-height: 3.61328vw;
+        text-decoration: none;
+        color: #0071FC;
+        padding-top: 1.17188vw;
+        padding-left: 2.34375vw; } }
+    @media (max-width: 390px) {
+      .card-reviews__text {
+        font-size: 3.07692vw;
+        font-weight: 700;
+        line-height: 3.58974vw;
+        text-decoration: none;
+        color: #0071FC;
+        padding-top: 1.02564vw;
+        padding-left: 2.05128vw; } }
