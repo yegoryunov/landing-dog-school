@@ -712,8 +712,28 @@ pre {
     width: 8.54167vw;
     height: 8.54167vw;
     position: absolute;
-    top: 320px;
+    top: 16.66667vw;
     right: none;
     bottom: none;
-    left: 684px;
+    left: 35.625vw;
     transform: rotate(8deg); }
+    @media (max-width: 1024px) {
+      .price-block__icon-sale {
+        width: 17.08984vw;
+        height: 17.08984vw;
+        position: absolute;
+        top: 32.03125vw;
+        right: none;
+        bottom: none;
+        left: 71.09375vw;
+        transform: rotate(10deg); } }
+    @media (max-width: 390px) {
+      .price-block__icon-sale {
+        width: 16.41026vw;
+        height: 16.41026vw;
+        position: absolute;
+        top: 30.76923vw;
+        right: none;
+        bottom: none;
+        left: 68.20513vw;
+        transform: rotate(8deg); } }

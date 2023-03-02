@@ -405,8 +405,19 @@
 	}
 	&__icon-sale {
 		@include sizeSettings(vwl(164),vwl(164));
-		@include positionSettings(absolute,320px,none,none,684px);
+		@include positionSettings(absolute,vwl(320),none,none,vwl(684));
 		transform: rotate(8deg);
+		@media (max-width: 1024px) {
+			@include sizeSettings(vwt(175),vwt(175));
+			@include positionSettings(absolute,vwt(328),none,none,vwt(728));
+			transform: rotate(10deg);
+		}
+		@media (max-width: 390px) {
+			@include sizeSettings(vwp(64),vwp(64));
+			@include positionSettings(absolute,vwp(120),none,none,vwp(266));
+			transform: rotate(8deg);
+		}
 	}
 }
+// Price end
 
