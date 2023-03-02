@@ -421,3 +421,49 @@
 }
 // Price end
 
+// How to learn start
+.how-to-learn {
+	@include sizeSettings(vwl(1856),vwl(1040));
+	background-color: $primary-color;
+	border-radius: vwl(64);
+	margin: vwl(32) auto 0;
+
+	&__heading {
+		@include fontSettings(vwl(96),900,vwl(120),none,$white-color);
+		padding-top: vwl(64);
+		padding-left: vwl(68);
+	}
+
+	&__row-top {
+		padding-top: vwl(64);
+		padding-left: vwl(68);
+		@include flexSettings(flex,row,flex-start,flex-start,vwl(66));
+	}
+
+	&__row-bottom {
+		padding-top: vwl(80);
+		padding-left: vwl(68);
+		@include flexSettings(flex,row,flex-start,flex-start,vwl(64));
+	}
+
+	&__content {
+		@include flexSettings(flex,column,flex-start,flex-start,vwl(24));
+		&-heading {
+			@include flexSettings(flex,row,center,flex-start,vwl(24));
+			span {
+				background-color: $secondary-color;
+				@include fontSettings(vwl(40),700,vwl(47),none,$white-color);
+				padding: vwl(8) vwl(48);
+				border-radius: vwl(100);
+
+			}
+			h3 {
+				@include fontSettings(vwl(60),700,vwl(70),none,$white-color);
+			}
+		}
+		&-text {
+			@include fontSettings(vwl(32),700,vwl(44),none,$white-color);
+		}
+	}
+}
+
