@@ -947,6 +947,12 @@ pre {
 
 .facts-about-school {
   padding-top: 5vw; }
+  @media (max-width: 1024px) {
+    .facts-about-school {
+      padding-top: 6.25vw; } }
+  @media (max-width: 390px) {
+    .facts-about-school {
+      padding-top: 6.66667vw; } }
   .facts-about-school__heading {
     font-size: 5vw;
     font-weight: 700;
@@ -954,6 +960,22 @@ pre {
     text-decoration: none;
     color: #0071FC;
     padding-left: 1.66667vw; }
+    @media (max-width: 1024px) {
+      .facts-about-school__heading {
+        font-size: 9.375vw;
+        font-weight: 700;
+        line-height: 11.71875vw;
+        text-decoration: none;
+        color: #0071FC;
+        padding-left: 2.34375vw; } }
+    @media (max-width: 390px) {
+      .facts-about-school__heading {
+        font-size: 12.30769vw;
+        font-weight: 700;
+        line-height: 17.4359vw;
+        text-decoration: none;
+        color: #0071FC;
+        padding-left: 4.10256vw; } }
     .facts-about-school__heading span {
       color: #FFC200; }
   .facts-about-school__cards-row {
@@ -963,6 +985,23 @@ pre {
     justify-content: center;
     gap: 1.66667vw;
     padding-top: 3.33333vw; }
+    @media (max-width: 1024px) {
+      .facts-about-school__cards-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2.34375vw;
+        flex-wrap: wrap;
+        padding-top: 3.125vw; } }
+    @media (max-width: 390px) {
+      .facts-about-school__cards-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4.10256vw;
+        padding-top: 1.5625vw; } }
   .facts-about-school__card {
     width: 22.91667vw;
     height: 22.91667vw;
@@ -972,12 +1011,36 @@ pre {
     align-items: center;
     justify-content: center;
     gap: 0; }
+    @media (max-width: 1024px) {
+      .facts-about-school__card {
+        width: 46.48438vw;
+        height: 46.48438vw;
+        border-radius: 3.90625vw; } }
+    @media (max-width: 390px) {
+      .facts-about-school__card {
+        width: 91.79487vw;
+        height: 91.79487vw;
+        border-radius: 6.15385vw; } }
     .facts-about-school__card h3 {
       font-size: 5vw;
       font-weight: 700;
       line-height: 6.25vw;
       text-decoration: none;
       color: #FEFEFE; }
+      @media (max-width: 1024px) {
+        .facts-about-school__card h3 {
+          font-size: 9.375vw;
+          font-weight: 700;
+          line-height: 11.71875vw;
+          text-decoration: none;
+          color: #FEFEFE; } }
+      @media (max-width: 390px) {
+        .facts-about-school__card h3 {
+          font-size: 18.46154vw;
+          font-weight: 700;
+          line-height: 23.07692vw;
+          text-decoration: none;
+          color: #FEFEFE; } }
     .facts-about-school__card span {
       font-size: 2.5vw;
       font-weight: 700;
@@ -985,6 +1048,20 @@ pre {
       text-decoration: none;
       color: #FEFEFE;
       text-align: center; }
+      @media (max-width: 1024px) {
+        .facts-about-school__card span {
+          font-size: 4.6875vw;
+          font-weight: 700;
+          line-height: 5.46875vw;
+          text-decoration: none;
+          color: #FEFEFE; } }
+      @media (max-width: 390px) {
+        .facts-about-school__card span {
+          font-size: 9.23077vw;
+          font-weight: 700;
+          line-height: 10.76923vw;
+          text-decoration: none;
+          color: #FEFEFE; } }
   .facts-about-school__card_blue {
     background-color: #0071FC; }
   .facts-about-school__card_orange {
