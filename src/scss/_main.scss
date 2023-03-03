@@ -427,42 +427,118 @@
 	background-color: $primary-color;
 	border-radius: vwl(64);
 	margin: vwl(32) auto 0;
+	@media (max-width: 1024px) {
+		@include sizeSettings(vwt(976),vwt(1976));
+		border-radius: vwt(40);
+		margin: vwt(24) auto 0;
+	}
+	@media (max-width: 390px) {
+		@include sizeSettings(vwp(358),vwp(720));
+		border-radius: vwp(20);
+		margin: vwp(16) auto 0;
+	}
 
 	&__heading {
 		@include fontSettings(vwl(96),900,vwl(120),none,$white-color);
 		padding-top: vwl(64);
 		padding-left: vwl(68);
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(96),900,vwt(120),none,$white-color);
+			padding-top: vwt(64);
+			padding-left: vwt(68);
+		}
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(32),900,vwp(40),none,$white-color);
+			padding-top: vwp(32);
+			padding-left: vwp(20);
+			margin-bottom: vwp(32);
+			width: vwp(216);
+			height: vwp(88); // Переделать потом через js перенос слова в заголовке
+		}
 	}
 
 	&__row-top {
 		padding-top: vwl(64);
 		padding-left: vwl(68);
 		@include flexSettings(flex,row,flex-start,flex-start,vwl(66));
+		@media (max-width: 1024px) {
+			@include flexSettings(flex,column,flex-start,flex-start,vwt(80));
+			padding-top: vwt(64);
+			padding-left: vwt(48);
+		}
+		@media (max-width: 390px) {
+			@include flexSettings(flex,column,flex-start,flex-start,vwp(24));
+			padding-top: vwp(16);
+			padding-left: vwp(20);
+		}
 	}
 
 	&__row-bottom {
 		padding-top: vwl(80);
 		padding-left: vwl(68);
 		@include flexSettings(flex,row,flex-start,flex-start,vwl(64));
+		@media (max-width: 1024px) {
+			@include flexSettings(flex,column,flex-start,flex-start,vwt(80));
+			padding-top: vwt(80);
+			padding-left: vwt(48);
+		}
+		@media (max-width: 390px) {
+			@include flexSettings(flex,column,flex-start,flex-start,vwp(24));
+			padding-top: vwp(24);
+			padding-left: vwp(20);
+		}
 	}
 
 	&__content {
-		@include flexSettings(flex,column,flex-start,flex-start,vwl(24));
+		@include flexSettings(flex,column,flex-start,flex-start,vwl(32));
+		@media (max-width: 1024px) {
+			@include flexSettings(flex,column,flex-start,flex-start,vwt(32));
+		}
+		@media (max-width: 390px) {
+			@include flexSettings(flex,column,flex-start,flex-start,vwp(10));
+		}
 		&-heading {
 			@include flexSettings(flex,row,center,flex-start,vwl(24));
+			@media (max-width: 1024px) {
+				@include flexSettings(flex,row,center,flex-start,vwt(24));
+			}
+			@media (max-width: 390px) {
+				@include flexSettings(flex,row,center,flex-start,vwp(8));
+			}
 			span {
 				background-color: $secondary-color;
 				@include fontSettings(vwl(40),700,vwl(47),none,$white-color);
 				padding: vwl(8) vwl(48);
 				border-radius: vwl(100);
-
+				@media (max-width: 1024px) {
+					@include fontSettings(vwt(40),700,vwt(47),none,$white-color);
+					padding: vwt(8) vwt(48);
+					border-radius: vwt(100);
+				}
+				@media (max-width: 390px) {
+					@include fontSettings(vwp(16),700,vwp(18),none,$white-color);
+					padding: vwp(5) vwp(17) vwp(3) vwp(17);
+					border-radius: vwp(100);
+				}
 			}
 			h3 {
 				@include fontSettings(vwl(60),700,vwl(70),none,$white-color);
+				@media (max-width: 1024px) {
+					@include fontSettings(vwt(60),700,vwt(70),none,$white-color);
+				}
+				@media (max-width: 390px) {
+					@include fontSettings(vwp(20),700,vwp(23),none,$white-color);
+				}
 			}
 		}
 		&-text {
 			@include fontSettings(vwl(32),700,vwl(44),none,$white-color);
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(32),700,vwt(44),none,$white-color);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(12),700,vwp(16),none,$white-color);
+			}
 		}
 	}
 }
