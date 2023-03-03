@@ -767,3 +767,87 @@
 	}
 }
 // Price block end
+// Footer start
+.footer {
+	@include flexSettings(flex,row,center,center,vwl(623));
+	padding-top: vwl(36);
+	padding-bottom: vwl(36);
+	margin-top: vwl(164);
+	background-color: $gray-color;
+	@media (max-width: 1024px) {
+		@include flexSettings(flex,row,center,center,vwt(131));
+		padding-top: vwt(30);
+		padding-bottom: vwt(30);
+		margin-top: vwt(140);
+	}
+	@media (max-width: 390px) {
+		@include flexSettings(flex,row,center,center,vwt(131));
+		padding-top: vwp(16);
+		padding-bottom: vwp(16);
+		margin-top: vwp(64);
+	}
+	&__left {
+		@include flexSettings(flex,row,center,center,vwl(16));
+		@media (max-width: 1024px) {
+			@include flexSettings(flex,row,center,center,vwt(12));
+		}
+		@media (max-width: 390px) {
+			@include flexSettings(flex,row,center,center,vwp(12));
+		}
+		&-lng {
+			@include flexSettings(flex,row,center,center,vwl(16));
+			@media (max-width: 1024px) {
+				@include flexSettings(flex,row,center,center,vwt(16));
+			}
+			@media (max-width: 390px) {
+				@include flexSettings(flex,row,center,center,vwp(10));
+			}
+			&-icon {
+				@include sizeSettings(vwl(32), vwl(32));
+				@media (max-width: 1024px) {
+					@include sizeSettings(vwt(32), vwt(32));
+				}
+				@media (max-width: 390px) {
+					@include sizeSettings(vwp(22), vwp(22));
+				}
+			}
+			&-text {
+				@include fontSettings(vwl(32),700,vwl(44),none,$white-color);
+				@media (max-width: 1024px) {
+					@include fontSettings(vwt(32),700,vwt(44),none,$white-color);
+				}
+				@media (max-width: 390px) {
+					@include fontSettings(vwp(20),700,vwp(28),none,$white-color);
+				}
+			}
+		}
+		&-arrow {
+			@include sizeSettings(vwl(24), vwl(24));
+			@media (max-width: 1024px) {
+				@include sizeSettings(vwt(32), vwt(32));
+			}
+			@media (max-width: 390px) {
+				@include sizeSettings(vwp(16), vwp(16));
+			}
+		}
+	}
+	&__right {
+		@include flexSettings(flex,row,center,flex-start,vwl(48));
+		@media (max-width: 1024px) {
+			@include flexSettings(flex,row,center,flex-start,vwt(32));
+		}
+		@media (max-width: 390px) {
+			@include flexSettings(flex,column,flex-start,flex-start,vwp(2));
+		}
+		&-nav {
+			@include fontSettings(vwl(32),700,vwl(44),none,$white-color);
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(20),700,vwt(44),none,$white-color);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(12),700,vwp(16),none,$white-color);
+			}
+		}
+	}
+}
+// Footer end

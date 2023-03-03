@@ -1329,3 +1329,156 @@ span {
           border-radius: 25.64103vw;
           margin-top: 4.61538vw;
           margin-left: 5.12821vw; } }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 32.44792vw;
+  padding-top: 1.875vw;
+  padding-bottom: 1.875vw;
+  margin-top: 8.54167vw;
+  background-color: #B2B2BB; }
+  @media (max-width: 1024px) {
+    .footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 12.79297vw;
+      padding-top: 2.92969vw;
+      padding-bottom: 2.92969vw;
+      margin-top: 13.67188vw; } }
+  @media (max-width: 390px) {
+    .footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 12.79297vw;
+      padding-top: 4.10256vw;
+      padding-bottom: 4.10256vw;
+      margin-top: 16.41026vw; } }
+  .footer__left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.83333vw; }
+    @media (max-width: 1024px) {
+      .footer__left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1.17188vw; } }
+    @media (max-width: 390px) {
+      .footer__left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3.07692vw; } }
+    .footer__left-lng {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 0.83333vw; }
+      @media (max-width: 1024px) {
+        .footer__left-lng {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 1.5625vw; } }
+      @media (max-width: 390px) {
+        .footer__left-lng {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 2.5641vw; } }
+      .footer__left-lng-icon {
+        width: 1.66667vw;
+        height: 1.66667vw; }
+        @media (max-width: 1024px) {
+          .footer__left-lng-icon {
+            width: 3.125vw;
+            height: 3.125vw; } }
+        @media (max-width: 390px) {
+          .footer__left-lng-icon {
+            width: 5.64103vw;
+            height: 5.64103vw; } }
+      .footer__left-lng-text {
+        font-size: 1.66667vw;
+        font-weight: 700;
+        line-height: 2.29167vw;
+        text-decoration: none;
+        color: #FEFEFE; }
+        @media (max-width: 1024px) {
+          .footer__left-lng-text {
+            font-size: 3.125vw;
+            font-weight: 700;
+            line-height: 4.29688vw;
+            text-decoration: none;
+            color: #FEFEFE; } }
+        @media (max-width: 390px) {
+          .footer__left-lng-text {
+            font-size: 5.12821vw;
+            font-weight: 700;
+            line-height: 7.17949vw;
+            text-decoration: none;
+            color: #FEFEFE; } }
+    .footer__left-arrow {
+      width: 1.25vw;
+      height: 1.25vw; }
+      @media (max-width: 1024px) {
+        .footer__left-arrow {
+          width: 3.125vw;
+          height: 3.125vw; } }
+      @media (max-width: 390px) {
+        .footer__left-arrow {
+          width: 4.10256vw;
+          height: 4.10256vw; } }
+  .footer__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.5vw; }
+    @media (max-width: 1024px) {
+      .footer__right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 3.125vw; } }
+    @media (max-width: 390px) {
+      .footer__right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0.51282vw; } }
+    .footer__right-nav {
+      font-size: 1.66667vw;
+      font-weight: 700;
+      line-height: 2.29167vw;
+      text-decoration: none;
+      color: #FEFEFE; }
+      @media (max-width: 1024px) {
+        .footer__right-nav {
+          font-size: 1.95312vw;
+          font-weight: 700;
+          line-height: 4.29688vw;
+          text-decoration: none;
+          color: #FEFEFE; } }
+      @media (max-width: 390px) {
+        .footer__right-nav {
+          font-size: 3.07692vw;
+          font-weight: 700;
+          line-height: 4.10256vw;
+          text-decoration: none;
+          color: #FEFEFE; } }
