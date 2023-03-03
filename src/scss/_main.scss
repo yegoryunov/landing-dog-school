@@ -621,12 +621,34 @@
 .price-block-second {
 	@include flexSettings(flex,row,center,center,vwl(224));
 	padding-top: vwl(138);
+	@media (max-width: 1024px) {
+		padding-top: vwt(64);
+		padding-left: vwt(24);
+		@include flexSettings(flex,column,flex-start,center,vwt(40));
+	}
+	@media (max-width: 390px) {
+		padding-top: vwp(24);
+		padding-left: vwp(16);
+		@include flexSettings(flex,column,flex-start,center,vwp(20));
+	}
 	&__left {
 		@include flexSettings(flex,column,flex-start,flex-start,vwl(40));
+		@media (max-width: 1024px) {
+			@include flexSettings(flex,column,flex-start,flex-start,vwt(40));
+		}
+		@media (max-width: 390px) {
+			@include flexSettings(flex,column,flex-start,flex-start,vwp(12));
+		}
 		&-heading {
 			@include fontSettings(vwl(72),700,vwl(90),none,$primary-color);
 			span {
 				color: $secondary-color;
+			}
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(72),700,vwt(90),none,$primary-color);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(32),700,vwp(40),none,$primary-color);
 			}
 		}
 		&-time {
@@ -634,33 +656,90 @@
 			background-color: $primary-color;
 			padding: vwl(20) vwl(40);
 			border-radius: vwl(100);
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(48),700,vwt(56),none,$white-color);
+				padding: vwt(20) vwt(40);
+				border-radius: vwt(100);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(20),700,vwp(24),none,$white-color);
+				padding: vwp(10) vwp(28);
+				border-radius: vwp(100);
+			}
 		}
 	}
-
 	&__right {
 		@include sizeSettings(vwl(717),vwl(434));
 		border-radius: vwl(32);
 		background-color: $primary-color;
+		@media (max-width: 1024px) {
+			@include sizeSettings(vwt(717),vwt(434));
+			border-radius: vwt(32);
+		}
+		@media (max-width: 390px) {
+			@include sizeSettings(vwp(340),vwp(204));
+			border-radius: vwp(16);
+		}
 		&-price {
 			@include flexSettings(flex,row,center,flex-start,vwl(57));
 			padding-top: vwl(40);
 			padding-left: vwl(48);
+			@media (max-width: 1024px) {
+				@include flexSettings(flex,row,center,flex-start,vwt(57));
+				padding-top: vwt(40);
+				padding-left: vwt(48);
+			}
+			@media (max-width: 390px) {
+				@include flexSettings(flex,row,center,flex-start,vwp(24));
+				padding-top: vwp(20);
+				padding-left: vwp(20);
+			}
 			&_now {
 				@include fontSettings(vwl(72),700,vwl(90),none,$white-color);
+				@media (max-width: 1024px) {
+					@include fontSettings(vwt(72),700,vwt(90),none,$white-color);
+				}
+				@media (max-width: 390px) {
+					@include fontSettings(vwp(32),700,vwp(40),none,$white-color);
+				}
 			}
 			&_old {
 				@include fontSettings(vwl(72),700,vwl(90),line-through,$white-color);
+				@media (max-width: 1024px) {
+					@include fontSettings(vwt(72),700,vwt(90),line-through,$white-color);
+				}
+				@media (max-width: 390px) {
+					@include fontSettings(vwp(32),700,vwp(40),line-through,$white-color);
+				}
 			}
 		}
 		&-month {
 			@include fontSettings(vwl(40),700,vwl(47),none,$white-color);
 			padding-left: vwl(48);
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(40),700,vwt(40),none,$white-color);
+				padding-left: vwt(48);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(16),700,vwp(19),none,$white-color);
+				padding-left: vwp(20);
+			}
 		}
 		&-text {
 			@include fontSettings(vwl(24),700,vwl(30),none,$white-color);
 			opacity: .8;
 			padding-top: vwl(24);
 			padding-left: vwl(48);
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(24),700,vwt(30),none,$white-color);
+				padding-top: vwt(24);
+				padding-left: vwt(48);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(12),700,vwp(16),none,$white-color);
+				padding-top: vwp(12);
+				padding-left: vwp(20);
+			}
 		}
 		&-btn-learn {
 			@include fontSettings(vwl(24),700,vwl(30),none,$white-color);
@@ -670,6 +749,21 @@
 			border-radius: vwl(100);
 			margin-top: vwl(40);
 			margin-left: vwl(48);
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(24),700,vwt(30),none,$white-color);
+				padding: vwt(18) vwt(32);
+				border-radius: vwt(100);
+				margin-top: vwt(40);
+				margin-left: vwt(48);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(12),700,vwp(16),none,$white-color);
+				padding: vwp(8) vwp(16);
+				border-radius: vwp(100);
+				margin-top: vwp(18);
+				margin-left: vwp(20);
+			}
 		}
 	}
 }
+// Price block end
