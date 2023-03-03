@@ -437,7 +437,6 @@
 		border-radius: vwp(20);
 		margin: vwp(16) auto 0;
 	}
-
 	&__heading {
 		@include fontSettings(vwl(96),900,vwl(120),none,$white-color);
 		padding-top: vwl(64);
@@ -456,7 +455,6 @@
 			height: vwp(88); // Переделать потом через js перенос слова в заголовке
 		}
 	}
-
 	&__row-top {
 		padding-top: vwl(64);
 		padding-left: vwl(68);
@@ -472,7 +470,6 @@
 			padding-left: vwp(20);
 		}
 	}
-
 	&__row-bottom {
 		padding-top: vwl(80);
 		padding-left: vwl(68);
@@ -488,7 +485,6 @@
 			padding-left: vwp(20);
 		}
 	}
-
 	&__content {
 		@include flexSettings(flex,column,flex-start,flex-start,vwl(32));
 		@media (max-width: 1024px) {
@@ -542,4 +538,39 @@
 		}
 	}
 }
+// How to learn end
 
+// Facts about school start
+.facts-about-school {
+	padding-top: vwl(96);
+	&__heading {
+		@include fontSettings(vwl(96),700,vwl(120),none,$primary-color);
+		padding-left: vwl(32);
+		span {
+			color: $secondary-color;
+		}
+	}
+	&__cards-row {
+		@include flexSettings(flex,row,center,center,vwl(32));
+		padding-top: vwl(64);
+	}
+	&__card {
+		@include sizeSettings(vwl(440),vwl(440));
+		border-radius: vwl(40);
+		@include flexSettings(flex,column,center,center,0);
+		h3 {
+			@include fontSettings(vwl(96),700,vwl(120),none,$white-color);
+		}
+		span {
+			@include fontSettings(vwl(48),700,vwl(56),none,$white-color);
+			text-align: center;
+		}
+	}
+	&__card_blue {
+		background-color: $primary-color;
+	}
+	&__card_orange {
+		background-color: $secondary-color;
+	}
+}
+// Facts about school end
