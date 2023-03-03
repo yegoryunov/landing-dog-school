@@ -59,6 +59,9 @@ button {
 pre {
   font-family: 'ALS Schlange Sans'; }
 
+span {
+  font-family: 'ALS Schlange Sans'; }
+
 .header {
   display: flex;
   flex-direction: row;
@@ -1066,3 +1069,87 @@ pre {
     background-color: #0071FC; }
   .facts-about-school__card_orange {
     background-color: #FFC200; }
+
+.price-block-second {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 11.66667vw;
+  padding-top: 7.1875vw; }
+  .price-block-second__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2.08333vw; }
+    .price-block-second__left-heading {
+      font-size: 3.75vw;
+      font-weight: 700;
+      line-height: 4.6875vw;
+      text-decoration: none;
+      color: #0071FC; }
+      .price-block-second__left-heading span {
+        color: #FFC200; }
+    .price-block-second__left-time {
+      font-size: 2.5vw;
+      font-weight: 700;
+      line-height: 2.91667vw;
+      text-decoration: none;
+      color: #FEFEFE;
+      background-color: #0071FC;
+      padding: 1.04167vw 2.08333vw;
+      border-radius: 5.20833vw; }
+  .price-block-second__right {
+    width: 37.34375vw;
+    height: 22.60417vw;
+    border-radius: 1.66667vw;
+    background-color: #0071FC; }
+    .price-block-second__right-price {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2.96875vw;
+      padding-top: 2.08333vw;
+      padding-left: 2.5vw; }
+      .price-block-second__right-price_now {
+        font-size: 3.75vw;
+        font-weight: 700;
+        line-height: 4.6875vw;
+        text-decoration: none;
+        color: #FEFEFE; }
+      .price-block-second__right-price_old {
+        font-size: 3.75vw;
+        font-weight: 700;
+        line-height: 4.6875vw;
+        text-decoration: line-through;
+        color: #FEFEFE; }
+    .price-block-second__right-month {
+      font-size: 2.08333vw;
+      font-weight: 700;
+      line-height: 2.44792vw;
+      text-decoration: none;
+      color: #FEFEFE;
+      padding-left: 2.5vw; }
+    .price-block-second__right-text {
+      font-size: 1.25vw;
+      font-weight: 700;
+      line-height: 1.5625vw;
+      text-decoration: none;
+      color: #FEFEFE;
+      opacity: .8;
+      padding-top: 1.25vw;
+      padding-left: 2.5vw; }
+    .price-block-second__right-btn-learn {
+      font-size: 1.25vw;
+      font-weight: 700;
+      line-height: 1.5625vw;
+      text-decoration: none;
+      color: #FEFEFE;
+      border: 0;
+      background-color: #FFC200;
+      padding: 0.9375vw 1.66667vw;
+      border-radius: 5.20833vw;
+      margin-top: 2.08333vw;
+      margin-left: 2.5vw; }

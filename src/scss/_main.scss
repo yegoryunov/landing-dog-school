@@ -617,3 +617,59 @@
 	}
 }
 // Facts about school end
+// Price block start
+.price-block-second {
+	@include flexSettings(flex,row,center,center,vwl(224));
+	padding-top: vwl(138);
+	&__left {
+		@include flexSettings(flex,column,flex-start,flex-start,vwl(40));
+		&-heading {
+			@include fontSettings(vwl(72),700,vwl(90),none,$primary-color);
+			span {
+				color: $secondary-color;
+			}
+		}
+		&-time {
+			@include fontSettings(vwl(48),700,vwl(56),none,$white-color);
+			background-color: $primary-color;
+			padding: vwl(20) vwl(40);
+			border-radius: vwl(100);
+		}
+	}
+
+	&__right {
+		@include sizeSettings(vwl(717),vwl(434));
+		border-radius: vwl(32);
+		background-color: $primary-color;
+		&-price {
+			@include flexSettings(flex,row,center,flex-start,vwl(57));
+			padding-top: vwl(40);
+			padding-left: vwl(48);
+			&_now {
+				@include fontSettings(vwl(72),700,vwl(90),none,$white-color);
+			}
+			&_old {
+				@include fontSettings(vwl(72),700,vwl(90),line-through,$white-color);
+			}
+		}
+		&-month {
+			@include fontSettings(vwl(40),700,vwl(47),none,$white-color);
+			padding-left: vwl(48);
+		}
+		&-text {
+			@include fontSettings(vwl(24),700,vwl(30),none,$white-color);
+			opacity: .8;
+			padding-top: vwl(24);
+			padding-left: vwl(48);
+		}
+		&-btn-learn {
+			@include fontSettings(vwl(24),700,vwl(30),none,$white-color);
+			border: 0;
+			background-color: $secondary-color;
+			padding: vwl(18) vwl(32);
+			border-radius: vwl(100);
+			margin-top: vwl(40);
+			margin-left: vwl(48);
+		}
+	}
+}
