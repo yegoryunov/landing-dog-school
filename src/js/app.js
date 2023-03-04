@@ -16,3 +16,40 @@ function countDownTimer() {
 }
 // countDownTimer end
 
+// Modal building image start
+modalBuildingImage()
+function modalBuildingImage() {
+	let modalImageBuildingContainer = document.querySelector(".modal-image-building-container");
+	let buildingImage = document.querySelector(".building-image");
+	let modalImageBuildingContainerImg = document.querySelector(".modal-image-building-container__img");
+	buildingImage.onclick = function(){
+		modalImageBuildingContainer.style.display = "block";
+		modalImageBuildingContainerImg.src = this.src;
+	}
+	
+	let modalImageBuildingContainerClose = document.querySelectorAll(".modal-image-building-container__close")[0];
+	
+	modalImageBuildingContainerClose.onclick = function() { 
+		modalImageBuildingContainer.style.display = "none";
+	}
+}
+// Modal building image end
+
+// Modal room image start
+modalRoomImage()
+function modalRoomImage() {
+	let modalImageRoomContainer = document.querySelector(".modal-image-room-container");
+	let roomImage = document.querySelector(".room-image");
+	let modalImageRoomContainerImg = document.querySelector(".modal-image-room-container__img");
+	roomImage.onclick = function(){
+		modalImageRoomContainer.style.display = "block";
+		modalImageRoomContainerImg.src = this.src;
+	}
+	
+	let modalImageRoomContainerClose = document.querySelectorAll(".modal-image-room-container__close")[0];
+	
+	modalImageRoomContainerClose.onclick = function() { 
+		modalImageRoomContainer.style.display = "none";
+	}
+}
+// Modal room image end

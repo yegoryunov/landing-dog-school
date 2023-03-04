@@ -570,17 +570,17 @@ span {
           width: 3.07692vw;
           border-radius: 25.64103vw; } }
 
-.building-block {
+.building-image {
   width: 47.5vw;
   height: 47.5vw;
   border-radius: 3.33333vw; }
   @media (max-width: 1024px) {
-    .building-block {
+    .building-image {
       width: 95.3125vw;
       height: 95.3125vw;
       border-radius: 4.6875vw; } }
   @media (max-width: 390px) {
-    .building-block {
+    .building-image {
       width: 91.79487vw;
       height: 91.79487vw;
       border-radius: 5.12821vw; } }
@@ -740,6 +740,21 @@ span {
         bottom: none;
         left: 68.20513vw;
         transform: rotate(8deg); } }
+
+.room-image {
+  width: 47.5vw;
+  height: 47.5vw;
+  border-radius: 3.33333vw; }
+  @media (max-width: 1024px) {
+    .room-image {
+      width: 95.3125vw;
+      height: 95.3125vw;
+      border-radius: 4.6875vw; } }
+  @media (max-width: 390px) {
+    .room-image {
+      width: 91.79487vw;
+      height: 91.79487vw;
+      border-radius: 5.12821vw; } }
 
 .how-to-learn {
   width: 96.66667vw;
@@ -1482,3 +1497,113 @@ span {
           line-height: 4.10256vw;
           text-decoration: none;
           color: #FEFEFE; } }
+
+.modal-image-building-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 2.60417vw;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */ }
+  @media (max-width: 1024px) {
+    .modal-image-building-container {
+      padding-top: 7.32422vw; } }
+  @media (max-width: 390px) {
+    .modal-image-building-container {
+      padding-top: 25.64103vw; } }
+
+.modal-image-building-container__close {
+  position: absolute;
+  top: 0.78125vw;
+  right: 1.82292vw;
+  color: #f1f1f1;
+  font-size: 5vw;
+  font-weight: bold;
+  transition: 0.3s; }
+  @media (max-width: 1024px) {
+    .modal-image-building-container__close {
+      top: 1.46484vw;
+      right: 3.41797vw;
+      font-size: 6.25vw; } }
+  @media (max-width: 390px) {
+    .modal-image-building-container__close {
+      top: 3.84615vw;
+      right: 8.97436vw;
+      font-size: 12.30769vw; } }
+  .modal-image-building-container__close:hover, .modal-image-building-container__close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer; }
+
+.modal-image-building-container__img {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 41.66667vw; }
+  @media (max-width: 1024px) {
+    .modal-image-building-container__img {
+      max-width: 78.125vw; } }
+  @media (max-width: 390px) {
+    .modal-image-building-container__img {
+      max-width: 83.07692vw; } }
+
+.modal-image-room-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 2.60417vw;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */ }
+  @media (max-width: 1024px) {
+    .modal-image-room-container {
+      padding-top: 7.32422vw; } }
+  @media (max-width: 390px) {
+    .modal-image-room-container {
+      padding-top: 25.64103vw; } }
+
+.modal-image-room-container__close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 5vw;
+  font-weight: bold;
+  transition: 0.3s; }
+  @media (max-width: 1024px) {
+    .modal-image-room-container__close {
+      top: 1.46484vw;
+      right: 3.41797vw;
+      font-size: 6.25vw; } }
+  @media (max-width: 390px) {
+    .modal-image-room-container__close {
+      top: 3.84615vw;
+      right: 8.97436vw;
+      font-size: 12.30769vw; } }
+  .modal-image-room-container__close:hover, .modal-image-room-container__close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer; }
+
+.modal-image-room-container__img {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 41.66667vw; }
+  @media (max-width: 1024px) {
+    .modal-image-room-container__img {
+      max-width: 78.125vw; } }
+  @media (max-width: 390px) {
+    .modal-image-room-container__img {
+      max-width: 83.07692vw; } }
