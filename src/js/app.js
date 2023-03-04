@@ -82,3 +82,16 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 // Slider reviews end
+
+// Smooth scroll anchors start
+const smoothScrollingAnchors = document.querySelectorAll('a[href^="#"]');
+for (let anchor of smoothScrollingAnchors) {
+	anchor.addEventListener('click', function(e) {
+		e.preventDefault();
+		const movingOnAnchors = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body';
+		document.querySelector(movingOnAnchors).scrollIntoView({
+			behavior: 'smooth',
+		})
+	})
+};
+// Smooth scroll anchors end

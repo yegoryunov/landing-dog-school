@@ -127,6 +127,9 @@ span {
     border: 0;
     border-radius: 5.20833vw;
     padding: 1.25vw 2.5vw; }
+    .header__button-start-learn:hover {
+      background-color: #1265CB;
+      transition: all .2s linear; }
     @media (max-width: 1024px) {
       .header__button-start-learn {
         font-size: 2.34375vw;
@@ -486,7 +489,8 @@ span {
           width: 3.07692vw;
           border-radius: 25.64103vw; } }
       .reviews-block__toggle-dot.active, .reviews-block__toggle-dot:hover {
-        background-color: #FEFEFE; }
+        background-color: #FEFEFE;
+        transition: all .3s ease; }
 
 .carusel-review {
   position: relative; }
@@ -495,8 +499,7 @@ span {
     height: 11.30208vw;
     position: absolute;
     top: 5vw;
-    left: 2.5vw;
-    z-index: 3; }
+    left: 2.5vw; }
     @media (max-width: 1024px) {
       .carusel-review__card {
         width: 85.25391vw;

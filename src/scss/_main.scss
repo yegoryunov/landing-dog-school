@@ -37,6 +37,10 @@
 		border: 0;
 		border-radius: vwl(100);
 		padding: vwl(24) vwl(48);
+		&:hover {
+			background-color: $primary-color-hover;
+			transition: all .2s linear;
+		}
 		@media (max-width: 1024px) {
 			@include fontSettings(vwt(24),700,vwt(28),none,$white-color);
 			background-color: $primary-color;
@@ -260,6 +264,7 @@
 			&.active,
 			&:hover {
 				background-color: $white-color;
+				transition: all .3s ease;
 			}
 		}
 	}
@@ -273,7 +278,6 @@
 		position: absolute;
 		top: vwl(96);
 		left: vwl(48);
-		z-index: 3;
 		@media (max-width: 1024px) {
 			width: vwt(873);
 			height: vwt(233);
