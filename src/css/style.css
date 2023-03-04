@@ -446,92 +446,8 @@ span {
         color: #FEFEFE;
         padding-top: 8.20513vw;
         padding-left: 5.12821vw; } }
-  .reviews-block__card {
-    width: 42.5vw;
-    height: 11.30208vw;
-    background-color: #DFAD0C;
-    border-radius: 10.41667vw;
-    margin: 5.57292vw auto 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1.25vw; }
-    @media (max-width: 1024px) {
-      .reviews-block__card {
-        width: 85.25391vw;
-        height: 22.75391vw;
-        border-radius: 19.53125vw;
-        margin: 11.71875vw auto 0;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 2.34375vw; } }
-    @media (max-width: 390px) {
-      .reviews-block__card {
-        width: 82.05128vw;
-        height: 21.53846vw;
-        border-radius: 20.51282vw;
-        margin: 12.82051vw auto 0;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 3.07692vw; } }
-    .reviews-block__card-img {
-      width: 11.25vw;
-      height: 11.25vw; }
-      @media (max-width: 1024px) {
-        .reviews-block__card-img {
-          width: 22.65625vw;
-          height: 22.65625vw; } }
-      @media (max-width: 390px) {
-        .reviews-block__card-img {
-          width: 21.53846vw;
-          height: 21.53846vw; } }
-    .reviews-block__card-review-name {
-      font-size: 2.5vw;
-      font-weight: 700;
-      line-height: 2.91667vw;
-      text-decoration: none;
-      color: #FEFEFE; }
-      @media (max-width: 1024px) {
-        .reviews-block__card-review-name {
-          font-size: 4.6875vw;
-          font-weight: 700;
-          line-height: 6.25vw;
-          text-decoration: none;
-          color: #FEFEFE; } }
-      @media (max-width: 390px) {
-        .reviews-block__card-review-name {
-          font-size: 4.10256vw;
-          font-weight: 700;
-          line-height: 5.64103vw;
-          text-decoration: none;
-          color: #FEFEFE; } }
-    .reviews-block__card-review-text {
-      font-size: 1.25vw;
-      font-weight: 700;
-      line-height: 1.5625vw;
-      text-decoration: none;
-      color: #FEFEFE; }
-      @media (max-width: 1024px) {
-        .reviews-block__card-review-text {
-          font-size: 2.34375vw;
-          font-weight: 700;
-          line-height: 3.125vw;
-          text-decoration: none;
-          color: #FEFEFE; } }
-      @media (max-width: 390px) {
-        .reviews-block__card-review-text {
-          font-size: 2.05128vw;
-          font-weight: 700;
-          line-height: 3.07692vw;
-          text-decoration: none;
-          color: #FEFEFE; } }
   .reviews-block__toggle {
-    padding-top: 2.08333vw;
+    padding-top: 18.125vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -539,7 +455,7 @@ span {
     gap: 1.25vw; }
     @media (max-width: 1024px) {
       .reviews-block__toggle {
-        padding-top: 4.6875vw;
+        padding-top: 39.84375vw;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -547,7 +463,7 @@ span {
         gap: 2.34375vw; } }
     @media (max-width: 390px) {
       .reviews-block__toggle {
-        padding-top: 5.12821vw;
+        padding-top: 37.94872vw;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -569,6 +485,30 @@ span {
           height: 3.07692vw;
           width: 3.07692vw;
           border-radius: 25.64103vw; } }
+      .reviews-block__toggle-dot.active, .reviews-block__toggle-dot:hover {
+        background-color: #FEFEFE; }
+
+.carusel-review {
+  position: relative; }
+  .carusel-review__card {
+    width: 42.5vw;
+    height: 11.30208vw;
+    position: absolute;
+    top: 5vw;
+    left: 2.5vw;
+    z-index: 3; }
+    @media (max-width: 1024px) {
+      .carusel-review__card {
+        width: 85.25391vw;
+        height: 22.75391vw;
+        top: 12.89062vw;
+        left: 4.98047vw; } }
+    @media (max-width: 390px) {
+      .carusel-review__card {
+        width: 82.05128vw;
+        height: 21.53846vw;
+        top: 12.30769vw;
+        left: 4.87179vw; } }
 
 .building-image {
   width: 47.5vw;

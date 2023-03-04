@@ -230,63 +230,15 @@
 			padding-left: vwp(20);
 		}
 	}
-	&__card {
-		@include sizeSettings(vwl(816), vwl(217));
-		background-color: $orange-color;
-		border-radius: vwl(200);
-		margin: vwl(107) auto 0;
-		@include flexSettings(flex,row,center,flex-start,vwl(24));
-		@media (max-width: 1024px) {
-			@include sizeSettings(vwt(873), vwt(233));
-			border-radius: vwt(200);
-			margin: vwt(120) auto 0;
-			@include flexSettings(flex,row,center,flex-start,vwt(24));
-		}
-		@media (max-width: 390px) {
-			@include sizeSettings(vwp(320), vwp(84));
-			border-radius: vwp(80);
-			margin: vwp(50) auto 0;
-			@include flexSettings(flex,row,center,flex-start,vwp(12));
-		}
-		&-img {
-			@include sizeSettings(vwl(216), vwl(216));
-			@media (max-width: 1024px) {
-				@include sizeSettings(vwt(232), vwt(232));
-			}
-			@media (max-width: 390px) {
-				@include sizeSettings(vwp(84), vwp(84));
-			}
-		}
-		&-review {
-			&-name {
-				@include fontSettings(vwl(48),700,vwl(56),none,$white-color);
-				@media (max-width: 1024px) {
-					@include fontSettings(vwt(48),700,vwt(64),none,$white-color);
-				}
-				@media (max-width: 390px) {
-					@include fontSettings(vwp(16),700,vwp(22),none,$white-color);
-				}
-			}
-			&-text {
-				@include fontSettings(vwl(24),700,vwl(30),none,$white-color);
-				@media (max-width: 1024px) {
-					@include fontSettings(vwt(24),700,vwt(32),none,$white-color);
-				}
-				@media (max-width: 390px) {
-					@include fontSettings(vwp(8),700,vwp(12),none,$white-color);
-				}
-			}
-		}
-	}
 	&__toggle {
-		padding-top: vwl(40);
+		padding-top: vwl(348);
 		@include flexSettings(flex,row,center,center,vwl(24));
 		@media (max-width: 1024px) {
-			padding-top: vwt(48);
+			padding-top: vwt(408);
 			@include flexSettings(flex,row,center,center,vwt(24));
 		}
 		@media (max-width: 390px) {
-			padding-top: vwp(20);
+			padding-top: vwp(148);
 			@include flexSettings(flex,row,center,center,vwp(10));
 		}
 		&-dot {
@@ -305,6 +257,34 @@
 				width: vwp(12);
 				border-radius: vwp(100);
 			}
+			&.active,
+			&:hover {
+				background-color: $white-color;
+			}
+		}
+	}
+}
+
+.carusel-review {
+	position: relative;
+	&__card {
+		width: vwl(816);
+		height: vwl(217);
+		position: absolute;
+		top: vwl(96);
+		left: vwl(48);
+		z-index: 3;
+		@media (max-width: 1024px) {
+			width: vwt(873);
+			height: vwt(233);
+			top: vwt(132);
+			left: vwt(51);
+		}
+		@media (max-width: 390px) {
+			width: vwp(320);
+			height: vwp(84);
+			top: vwp(48);
+			left: vwp(19);
 		}
 	}
 }
