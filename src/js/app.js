@@ -95,3 +95,27 @@ for (let anchor of smoothScrollingAnchors) {
 	})
 };
 // Smooth scroll anchors end
+
+const btnRequest = document.getElementById('btnRequest');
+const modalRequest = document.getElementById('modalRequest');
+const btnRequestClose = document.querySelector('#btnRequestClose');
+
+btnRequest.onclick = () => {
+	modalRequest.classList.add("modal-request__active");
+
+	btnRequestClose.addEventListener('click', closeRequestModal);
+
+	modalRequest.addEventListener('click', hideRequestModal);
+
+	function closeRequestModal() {
+		modalRequest.classList.remove("modal-request__active");
+		btnRequestClose.removeEventListener('click', closeRequestModal);
+		modalRequest.removeEventListener('click', hideRequestModal);
+	}
+
+	function hideRequestModal(event) {
+		if(event.target === modalRequest) {
+			closeRequestModal();
+		}
+	}
+};

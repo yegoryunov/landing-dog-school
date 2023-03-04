@@ -1079,8 +1079,6 @@ span {
       line-height: 4.6875vw;
       text-decoration: none;
       color: #0071FC; }
-      .price-block-second__left-heading span {
-        color: #FFC200; }
       @media (max-width: 1024px) {
         .price-block-second__left-heading {
           font-size: 7.03125vw;
@@ -1095,6 +1093,8 @@ span {
           line-height: 10.25641vw;
           text-decoration: none;
           color: #0071FC; } }
+      .price-block-second__left-heading span {
+        color: #FFC200; }
     .price-block-second__left-time {
       font-size: 2.5vw;
       font-weight: 700;
@@ -1550,3 +1550,249 @@ span {
   @media (max-width: 390px) {
     .modal-image-room-container__img {
       max-width: 83.07692vw; } }
+
+.modal-request {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7); }
+  .modal-request__content {
+    width: 50vw;
+    height: 33.33333vw;
+    background-color: #FEFEFE;
+    border-radius: 2.08333vw;
+    margin: 7% auto 0; }
+    @media (max-width: 1024px) {
+      .modal-request__content {
+        width: 93.75vw;
+        height: 65.625vw;
+        border-radius: 3.90625vw; } }
+    @media (max-width: 390px) {
+      .modal-request__content {
+        width: 91.79487vw;
+        height: 61.28205vw;
+        border-radius: 4.10256vw; } }
+    .modal-request__content-head {
+      padding-top: 2.08333vw;
+      padding-left: 2.08333vw;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 9.63542vw; }
+      @media (max-width: 1024px) {
+        .modal-request__content-head {
+          padding-top: 3.90625vw;
+          padding-left: 3.90625vw;
+          gap: 18.06641vw; } }
+      .modal-request__content-head-text {
+        font-size: 2.08333vw;
+        font-weight: 700;
+        line-height: 2.5vw;
+        text-decoration: none;
+        color: #111112; }
+        @media (max-width: 1024px) {
+          .modal-request__content-head-text {
+            font-size: 3.90625vw;
+            font-weight: 700;
+            line-height: 4.6875vw;
+            text-decoration: none;
+            color: #111112; } }
+      .modal-request__content-head-back {
+        font-size: 4.16667vw;
+        cursor: pointer;
+        color: #0071FC; }
+        @media (max-width: 1024px) {
+          .modal-request__content-head-back {
+            font-size: 7.8125vw; } }
+    .modal-request__content-main-text {
+      font-size: 1.04167vw;
+      font-weight: 700;
+      line-height: 1.45833vw;
+      text-decoration: none;
+      color: #6C6D76;
+      padding-top: 1.66667vw;
+      padding-left: 2.08333vw; }
+      @media (max-width: 1024px) {
+        .modal-request__content-main-text {
+          font-size: 1.95312vw;
+          font-weight: 700;
+          line-height: 2.73438vw;
+          text-decoration: none;
+          color: #6C6D76;
+          padding-top: 3.125vw;
+          padding-left: 3.90625vw; } }
+    .modal-request__content-input-name {
+      margin-top: 1.77083vw;
+      margin-left: 2.08333vw;
+      border: none;
+      background-color: #EEF0F4;
+      width: 25vw;
+      height: 3.33333vw;
+      border-radius: 0.83333vw;
+      font-size: 1.25vw;
+      font-weight: 700;
+      line-height: 1.45833vw;
+      text-decoration: none;
+      color: #111112;
+      padding-left: 1.25vw;
+      outline: none; }
+      @media (max-width: 1024px) {
+        .modal-request__content-input-name {
+          margin-top: 3.32031vw;
+          margin-left: 3.90625vw;
+          width: 46.875vw;
+          height: 6.25vw;
+          border-radius: 1.5625vw;
+          font-size: 2.34375vw;
+          font-weight: 700;
+          line-height: 2.73438vw;
+          text-decoration: none;
+          color: #111112;
+          padding-left: 2.34375vw; } }
+      .modal-request__content-input-name::placeholder {
+        font-size: 1.25vw;
+        font-weight: 700;
+        line-height: 1.45833vw;
+        text-decoration: none;
+        color: #B2B2BB; }
+        @media (max-width: 1024px) {
+          .modal-request__content-input-name::placeholder {
+            font-size: 2.34375vw;
+            font-weight: 700;
+            line-height: 2.73438vw;
+            text-decoration: none;
+            color: #B2B2BB; } }
+    .modal-request__content-input-tel {
+      margin-top: 0.83333vw;
+      margin-left: 2.08333vw;
+      border: none;
+      background-color: #EEF0F4;
+      width: 25vw;
+      height: 3.33333vw;
+      border-radius: 0.83333vw;
+      font-size: 1.25vw;
+      font-weight: 700;
+      line-height: 1.45833vw;
+      text-decoration: none;
+      color: #111112;
+      padding-left: 1.25vw;
+      outline: none; }
+      @media (max-width: 1024px) {
+        .modal-request__content-input-tel {
+          margin-top: 3.32031vw;
+          margin-left: 3.90625vw;
+          width: 46.875vw;
+          height: 6.25vw;
+          border-radius: 1.5625vw;
+          font-size: 2.34375vw;
+          font-weight: 700;
+          line-height: 2.73438vw;
+          text-decoration: none;
+          color: #111112;
+          padding-left: 2.34375vw; } }
+      .modal-request__content-input-tel::placeholder {
+        font-size: 1.25vw;
+        font-weight: 700;
+        line-height: 1.45833vw;
+        text-decoration: none;
+        color: #B2B2BB; }
+        @media (max-width: 1024px) {
+          .modal-request__content-input-tel::placeholder {
+            font-size: 2.34375vw;
+            font-weight: 700;
+            line-height: 2.73438vw;
+            text-decoration: none;
+            color: #B2B2BB; } }
+    .modal-request__content-input-mail {
+      margin-top: 0.83333vw;
+      margin-left: 2.08333vw;
+      border: none;
+      background-color: #EEF0F4;
+      width: 25vw;
+      height: 3.33333vw;
+      border-radius: 0.83333vw;
+      font-size: 1.25vw;
+      font-weight: 700;
+      line-height: 1.45833vw;
+      text-decoration: none;
+      color: #111112;
+      padding-left: 1.25vw;
+      outline: none; }
+      @media (max-width: 1024px) {
+        .modal-request__content-input-mail {
+          margin-top: 3.32031vw;
+          margin-left: 3.90625vw;
+          width: 46.875vw;
+          height: 6.25vw;
+          border-radius: 1.5625vw;
+          font-size: 2.34375vw;
+          font-weight: 700;
+          line-height: 2.73438vw;
+          text-decoration: none;
+          color: #111112;
+          padding-left: 2.34375vw; } }
+      .modal-request__content-input-mail::placeholder {
+        font-size: 1.25vw;
+        font-weight: 700;
+        line-height: 1.45833vw;
+        text-decoration: none;
+        color: #B2B2BB; }
+        @media (max-width: 1024px) {
+          .modal-request__content-input-mail::placeholder {
+            font-size: 2.34375vw;
+            font-weight: 700;
+            line-height: 2.73438vw;
+            text-decoration: none;
+            color: #B2B2BB; } }
+    .modal-request__content-btn-send {
+      margin-top: 1.25vw;
+      margin-left: 2.08333vw;
+      font-size: 1.25vw;
+      font-weight: 700;
+      line-height: 1.45833vw;
+      text-decoration: none;
+      color: #FEFEFE;
+      border: none;
+      background-color: #0071FC;
+      padding: 0.83333vw 2.08333vw;
+      border-radius: 5.20833vw;
+      display: block; }
+      @media (max-width: 1024px) {
+        .modal-request__content-btn-send {
+          margin-top: 2.34375vw;
+          margin-left: 3.90625vw;
+          font-size: 2.34375vw;
+          font-weight: 700;
+          line-height: 2.73438vw;
+          text-decoration: none;
+          color: #FEFEFE;
+          padding: 1.5625vw 3.90625vw;
+          border-radius: 9.76562vw; } }
+    .modal-request__content-dop-text {
+      display: block;
+      margin-top: 0.83333vw;
+      margin-left: 2.08333vw;
+      font-size: 0.83333vw;
+      font-weight: 700;
+      line-height: 1.04167vw;
+      text-decoration: none;
+      color: #B2B2BB; }
+      @media (max-width: 1024px) {
+        .modal-request__content-dop-text {
+          margin-top: 1.5625vw;
+          margin-left: 3.90625vw;
+          font-size: 1.5625vw;
+          font-weight: 700;
+          line-height: 1.95312vw;
+          text-decoration: none;
+          color: #B2B2BB; } }
+      .modal-request__content-dop-text u {
+        cursor: pointer; }
+
+.modal-request__active {
+  display: block; }

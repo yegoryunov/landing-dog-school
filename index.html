@@ -168,7 +168,24 @@
 					построенная исходя из ваших конкретных<br> 
 					запросов — даже самых специфичных.<br>
 				</p>
-				<button class="price-block-second__right-btn-learn">Оставить заявку</button>
+				<button class="price-block-second__right-btn-learn" id="btnRequest">Оставить заявку</button>
+				<div class="modal-request" id="modalRequest">
+					<div class="modal-request__content">
+						<div class="modal-request__content-head">
+							<h3 class="modal-request__content-head-text">Заполните форму, чтобы записаться<br>на пробное занятие</h3>
+							<span class="modal-request__content-head-back" id="btnRequestClose">&times;</span>
+						</div>
+						<p class="modal-request__content-main-text">
+							После того, как вы введете свои данные наш менеджер перезвонит вам,<br>
+							для того, чтобы проконсультировать Вас во всех вопросах и оформить заказ.<br>
+						</p>
+						<input class="modal-request__content-input-name" type="text" placeholder="Имя">
+						<input class="modal-request__content-input-tel" type="tel" placeholder="Телефон">
+						<input class="modal-request__content-input-mail" type="email" placeholder="Электронная почта">
+						<button class="modal-request__content-btn-send">Отправить</button>
+						<span class="modal-request__content-dop-text">Нажимая на кнопку, я соглашаюсь на <u>обработку персональных данных</u></span>
+					</div>
+				</div>
 			</div>
 		</section>
 		<!-- Price block end -->
