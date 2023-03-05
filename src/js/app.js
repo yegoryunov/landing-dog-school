@@ -1,7 +1,7 @@
 // countDownTimer start
 countDownTimer();
 function countDownTimer() {
-	let countDown = new Date("Mar 6, 2023, 12:00:00").getTime();
+	let countDown = new Date("Mar 7, 2023, 12:00:00").getTime();
 
 	let count = setInterval(function() {
 		let nowDateTime = new Date().getTime();
@@ -38,10 +38,10 @@ function modalBuildingImage() {
 // Modal room image start
 modalRoomImage()
 function modalRoomImage() {
-	let modalImageRoomContainer = document.querySelector(".modal-image-room-container");
-	let roomImage = document.querySelector(".room-image");
-	let modalImageRoomContainerImg = document.querySelector(".modal-image-room-container__img");
-	roomImage.onclick = function(){
+	const modalImageRoomContainer = document.querySelector(".modal-image-room-container");
+	const roomImage = document.querySelector(".room-image");
+	const modalImageRoomContainerImg = document.querySelector(".modal-image-room-container__img");
+	roomImage.onclick = function() {
 		modalImageRoomContainer.style.display = "block";
 		modalImageRoomContainerImg.src = this.src;
 	}
@@ -58,18 +58,18 @@ function modalRoomImage() {
 let slideIndex = 1;
 function showSlides(n) {
   let i;
-  let slides = document.querySelectorAll(".carusel-review__card");
-  let dots = document.querySelectorAll(".reviews-block__toggle-dot");
-  if (n > slides.length) {slideIndex = 1}    
+  let caruselReviewCard = document.querySelectorAll(".carusel-review__card");
+  let toggleDot = document.querySelectorAll(".reviews-block__toggle-dot");
+  if (n > caruselReviewCard.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+  for (i = 0; i < caruselReviewCard.length; i++) {
+    caruselReviewCard[i].style.display = "none"; 
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+  for (i = 0; i < toggleDot.length; i++) {
+    toggleDot[i].className = toggleDot[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  caruselReviewCard[slideIndex-1].style.display = "block";  
+  toggleDot[slideIndex-1].className += " active";
 }
 
 showSlides(slideIndex);
@@ -96,6 +96,7 @@ for (let anchor of smoothScrollingAnchors) {
 };
 // Smooth scroll anchors end
 
+// Modal request start
 const btnRequest = document.getElementById('btnRequest');
 const modalRequest = document.getElementById('modalRequest');
 const btnRequestClose = document.querySelector('#btnRequestClose');
@@ -119,3 +120,4 @@ btnRequest.onclick = () => {
 		}
 	}
 };
+// Modal request end

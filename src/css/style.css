@@ -1354,68 +1354,26 @@ span {
         align-items: center;
         justify-content: center;
         gap: 3.07692vw; } }
-    .footer__left-lng {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      gap: 0.83333vw; }
+    .footer__left-text {
+      font-size: 1.66667vw;
+      font-weight: 700;
+      line-height: 2.29167vw;
+      text-decoration: none;
+      color: #FEFEFE; }
       @media (max-width: 1024px) {
-        .footer__left-lng {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-          gap: 1.5625vw; } }
+        .footer__left-text {
+          font-size: 3.125vw;
+          font-weight: 700;
+          line-height: 4.29688vw;
+          text-decoration: none;
+          color: #FEFEFE; } }
       @media (max-width: 390px) {
-        .footer__left-lng {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-          gap: 2.5641vw; } }
-      .footer__left-lng-icon {
-        width: 1.66667vw;
-        height: 1.66667vw; }
-        @media (max-width: 1024px) {
-          .footer__left-lng-icon {
-            width: 3.125vw;
-            height: 3.125vw; } }
-        @media (max-width: 390px) {
-          .footer__left-lng-icon {
-            width: 5.64103vw;
-            height: 5.64103vw; } }
-      .footer__left-lng-text {
-        font-size: 1.66667vw;
-        font-weight: 700;
-        line-height: 2.29167vw;
-        text-decoration: none;
-        color: #FEFEFE; }
-        @media (max-width: 1024px) {
-          .footer__left-lng-text {
-            font-size: 3.125vw;
-            font-weight: 700;
-            line-height: 4.29688vw;
-            text-decoration: none;
-            color: #FEFEFE; } }
-        @media (max-width: 390px) {
-          .footer__left-lng-text {
-            font-size: 5.12821vw;
-            font-weight: 700;
-            line-height: 7.17949vw;
-            text-decoration: none;
-            color: #FEFEFE; } }
-    .footer__left-arrow {
-      width: 1.25vw;
-      height: 1.25vw; }
-      @media (max-width: 1024px) {
-        .footer__left-arrow {
-          width: 3.125vw;
-          height: 3.125vw; } }
-      @media (max-width: 390px) {
-        .footer__left-arrow {
-          width: 4.10256vw;
-          height: 4.10256vw; } }
+        .footer__left-text {
+          font-size: 5.12821vw;
+          font-weight: 700;
+          line-height: 7.17949vw;
+          text-decoration: none;
+          color: #FEFEFE; } }
   .footer__right {
     display: flex;
     flex-direction: row;
@@ -1442,6 +1400,8 @@ span {
       line-height: 2.29167vw;
       text-decoration: none;
       color: #FEFEFE; }
+      .footer__right-nav:hover {
+        color: #EEF0F4; }
       @media (max-width: 1024px) {
         .footer__right-nav {
           font-size: 1.95312vw;
@@ -1569,6 +1529,9 @@ span {
     .modal-image-room-container__img {
       max-width: 83.07692vw; } }
 
+.modal-image-room-container__active {
+  display: block; }
+
 .modal-request {
   display: none;
   position: fixed;
@@ -1690,6 +1653,9 @@ span {
       color: #111112;
       padding-left: 1.25vw;
       outline: none; }
+      .modal-request__content-input-name:hover {
+        border: 1px solid #B2B2BB;
+        transition: all 1s linear; }
       @media (max-width: 1024px) {
         .modal-request__content-input-name {
           margin-top: 3.32031vw;
@@ -1751,6 +1717,9 @@ span {
       color: #111112;
       padding-left: 1.25vw;
       outline: none; }
+      .modal-request__content-input-tel:hover {
+        border: 1px solid #B2B2BB;
+        transition: all 1s linear; }
       @media (max-width: 1024px) {
         .modal-request__content-input-tel {
           margin-top: 1.5625vw;
@@ -1812,6 +1781,9 @@ span {
       color: #111112;
       padding-left: 1.25vw;
       outline: none; }
+      .modal-request__content-input-mail:hover {
+        border: 1px solid #B2B2BB;
+        transition: all 1s linear; }
       @media (max-width: 1024px) {
         .modal-request__content-input-mail {
           margin-top: 1.5625vw;
@@ -1871,6 +1843,9 @@ span {
       padding: 0.83333vw 2.08333vw;
       border-radius: 5.20833vw;
       display: block; }
+      .modal-request__content-btn-send:hover {
+        background-color: #1265CB;
+        transition: all .2s linear; }
       @media (max-width: 1024px) {
         .modal-request__content-btn-send {
           margin-top: 2.34375vw;
@@ -1920,8 +1895,11 @@ span {
           line-height: 2.05128vw;
           text-decoration: none;
           color: #B2B2BB; } }
-      .modal-request__content-dop-text u {
-        cursor: pointer; }
+      .modal-request__content-dop-text span {
+        cursor: pointer;
+        text-decoration: underline; }
+        .modal-request__content-dop-text span:hover {
+          text-decoration: none; }
 
 .modal-request__active {
   display: block; }

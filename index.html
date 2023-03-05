@@ -54,7 +54,7 @@
 		<!-- reviews row end -->
 		<!-- price row start -->
 		<div class="price-row">
-			<img class="room-image" src="./src/assets/img/room.png" alt="room">
+			<img class="room-image" id="imageRoom" src="./src/assets/img/room.png" alt="room">
 			<div class="modal-image-room-container">
 				<span class="modal-image-room-container__close">&times;</span>
 				<img class="modal-image-room-container__img">
@@ -183,7 +183,7 @@
 						<input class="modal-request__content-input-tel" type="tel" placeholder="Телефон">
 						<input class="modal-request__content-input-mail" type="email" placeholder="Электронная почта">
 						<button class="modal-request__content-btn-send">Отправить</button>
-						<span class="modal-request__content-dop-text">Нажимая на кнопку, я соглашаюсь на <u>обработку персональных данных</u></span>
+						<span class="modal-request__content-dop-text">Нажимая на кнопку, я соглашаюсь на <span>обработку персональных данных</span></span>
 					</div>
 				</div>
 			</div>
@@ -194,11 +194,7 @@
 	<!-- footer start -->
 	<footer class="footer">
 		<div class="footer__left">
-			<div class="footer__left-lng">
-				<img class="footer__left-lng-icon" src="./src/assets/img/iconLngRussia.svg" alt="lngRus">
-				<span class="footer__left-lng-text">Русский</span>
-			</div>
-			<img class="footer__left-arrow" src="./src/assets/img/arrowDown.svg" alt="arrowDown">
+				<span class="footer__left-text">Егор Горюнов</span>
 		</div>
 		<nav class="footer__right">
 			<a class="footer__right-nav" href="#">Политика конфиденциальности</a>
