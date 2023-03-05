@@ -517,6 +517,10 @@ span {
   width: 47.5vw;
   height: 47.5vw;
   border-radius: 3.33333vw; }
+  .building-image:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: transform .8s ease; }
   @media (max-width: 1024px) {
     .building-image {
       width: 95.3125vw;
@@ -631,7 +635,11 @@ span {
     border-radius: 5.20833vw;
     padding: 1.25vw 16.77083vw;
     margin-top: 3.54167vw;
-    margin-left: 3.33333vw; }
+    margin-left: 3.33333vw;
+    display: inline-block; }
+    .price-block__btn-start-learn:hover {
+      background-color: #1265CB;
+      transition: all .2s linear; }
     @media (max-width: 1024px) {
       .price-block__btn-start-learn {
         font-size: 3.90625vw;
@@ -688,6 +696,10 @@ span {
   width: 47.5vw;
   height: 47.5vw;
   border-radius: 3.33333vw; }
+  .room-image:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: transform .8s ease; }
   @media (max-width: 1024px) {
     .room-image {
       width: 95.3125vw;
@@ -1265,6 +1277,10 @@ span {
       border-radius: 5.20833vw;
       margin-top: 2.08333vw;
       margin-left: 2.5vw; }
+      .price-block-second__right-btn-learn:hover {
+        background-color: #EFB90E;
+        transition: all .2s linear;
+        cursor: pointer; }
       @media (max-width: 1024px) {
         .price-block-second__right-btn-learn {
           font-size: 2.34375vw;
@@ -1488,7 +1504,8 @@ span {
   margin: auto;
   display: block;
   width: 100%;
-  max-width: 41.66667vw; }
+  max-width: 41.66667vw;
+  animation: zoom .8s ease; }
   @media (max-width: 1024px) {
     .modal-image-building-container__img {
       max-width: 78.125vw; } }
@@ -1543,7 +1560,8 @@ span {
   margin: auto;
   display: block;
   width: 100%;
-  max-width: 41.66667vw; }
+  max-width: 41.66667vw;
+  animation: zoom .8s ease; }
   @media (max-width: 1024px) {
     .modal-image-room-container__img {
       max-width: 78.125vw; } }
@@ -1617,13 +1635,20 @@ span {
       .modal-request__content-head-back {
         font-size: 4.16667vw;
         cursor: pointer;
-        color: #0071FC; }
+        color: #0071FC;
+        margin-top: -2%; }
+        .modal-request__content-head-back:hover {
+          color: #1265CB;
+          transform: scale(1.3);
+          transition: transform .3s ease; }
         @media (max-width: 1024px) {
           .modal-request__content-head-back {
-            font-size: 7.8125vw; } }
+            font-size: 7.8125vw;
+            margin-top: -2%; } }
         @media (max-width: 390px) {
           .modal-request__content-head-back {
-            font-size: 10.25641vw; } }
+            font-size: 8.20513vw;
+            margin-top: -3%; } }
     .modal-request__content-main-text {
       font-size: 1.04167vw;
       font-weight: 700;
@@ -1900,3 +1925,9 @@ span {
 
 .modal-request__active {
   display: block; }
+
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }

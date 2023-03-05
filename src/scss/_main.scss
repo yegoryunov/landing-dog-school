@@ -296,6 +296,11 @@
 .building-image {
 	@include sizeSettings(vwl(912), vwl(912));
 	border-radius: vwl(64);
+	&:hover {
+		cursor: pointer;
+		transform: scale(1.02);
+		transition: transform .8s ease;
+	}
 	@media (max-width: 1024px) {
 		@include sizeSettings(vwt(976), vwt(976));
 		border-radius: vwt(48);
@@ -372,6 +377,11 @@
 		padding: vwl(24) vwl(322);
 		margin-top: vwl(68);
 		margin-left: vwl(64);
+		display: inline-block;
+		&:hover {
+			background-color: $primary-color-hover;
+			transition: all .2s linear;
+		}
 		@media (max-width: 1024px) {
 			@include fontSettings(vwt(40),700,vwt(47),none,$white-color);
 			border-radius: vwt(100);
@@ -407,6 +417,11 @@
 .room-image {
 	@include sizeSettings(vwl(912), vwl(912));
 	border-radius: vwl(64);
+	&:hover {
+		cursor: pointer;
+		transform: scale(1.02);
+		transition: transform .8s ease;
+	}
 	@media (max-width: 1024px) {
 		@include sizeSettings(vwt(976), vwt(976));
 		border-radius: vwt(48);
@@ -746,6 +761,11 @@
 			border-radius: vwl(100);
 			margin-top: vwl(40);
 			margin-left: vwl(48);
+			&:hover {
+				background-color: $secondary-color-hover;
+				transition: all .2s linear;
+				cursor: pointer;
+			}
 			@media (max-width: 1024px) {
 				@include fontSettings(vwt(24),700,vwt(30),none,$white-color);
 				padding: vwt(18) vwt(32);
@@ -899,6 +919,7 @@
   display: block;
   width: 100%;
   max-width: vwl(800);
+	animation: zoom .8s ease;
 	@media (max-width: 1024px) {
 		max-width: vwt(800);
 	}
@@ -959,6 +980,7 @@
   display: block;
   width: 100%;
   max-width: vwl(800);
+	animation: zoom .8s ease;
 	@media (max-width: 1024px) {
 		max-width: vwt(800);
 	}
@@ -1021,11 +1043,19 @@
 				font-size: vwl(80);
 				cursor: pointer;
 				color: $primary-color;
+				margin-top: -2%;
+				&:hover {
+					color: $primary-color-hover;
+					transform: scale(1.3);
+					transition: transform .3s ease;
+				}
 				@media (max-width: 1024px) {
 					font-size: vwt(80);
+					margin-top: -2%;
 				}
 				@media (max-width: 390px) {
-					font-size: vwp(40);
+					font-size: vwp(32);
+					margin-top: -3%;
 				}
 			}
 		}
@@ -1204,3 +1234,10 @@
 	display: block;
 }
 // Modal request end
+
+// Animation start
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+// Animation end
