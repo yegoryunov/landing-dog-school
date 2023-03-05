@@ -1,0 +1,1243 @@
+// Header start
+.header {
+	@include flexSettings(flex,row,center,center,vwl(898));
+	padding-top: vwl(40);
+	@media (max-width: 1024px) {
+		@include flexSettings(flex,row,center,center,vwt(356));
+		padding-top: vwt(24);
+	}
+	@media (max-width: 390px) {
+		@include flexSettings(flex,row,center,center,vwp(64));
+		padding-top: vwp(12);
+	}
+	&__button-about-school {
+		@include fontSettings(vwl(40),700,vwl(47),none,$white-color);
+		background-color: $primary-color;
+		border: 0;
+		border-radius: vwl(100);
+		padding: vwl(24) vwl(48);
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(24),700,vwt(28),none,$white-color);
+			background-color: $primary-color;
+			border: 0;
+			border-radius: vwt(100);
+			padding: vwt(20) vwt(40);
+		}
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(12),700,vwp(14),none,$white-color);
+			background-color: $primary-color;
+			border: 0;
+			border-radius: vwp(100);
+			padding: vwp(8) vwp(16);
+		}
+	}
+	&__button-start-learn {
+		@include fontSettings(vwl(40),700,vwl(47),none,$white-color);;
+		background-color: $primary-color;
+		border: 0;
+		border-radius: vwl(100);
+		padding: vwl(24) vwl(48);
+		&:hover {
+			background-color: $primary-color-hover;
+			transition: all .2s linear;
+		}
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(24),700,vwt(28),none,$white-color);
+			background-color: $primary-color;
+			border: 0;
+			border-radius: vwt(100);
+			padding: vwt(20) vwt(40);
+		}
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(12),700,vwp(14),none,$white-color);
+			background-color: $primary-color;
+			border: 0;
+			border-radius: vwp(100);
+			padding: vwp(8) vwp(16);
+		}
+	}
+}
+// Header end
+
+// Hero start 
+.hero {
+	background-color: $secondary-color;
+	@include sizeSettings(vwl(1856), vwl(980));
+	border-radius: vwl(64);
+	margin: vwl(32) auto 0;
+	position: relative;
+	@media (max-width: 1024px) {
+		@include sizeSettings(vwt(976), vwt(516));
+		border-radius: vwt(32);
+		margin: vwt(24) auto 0;
+	}
+	@media (max-width: 390px) {
+		@include sizeSettings(vwp(358), vwp(190));
+		border-radius: vwp(12);
+		margin: vwp(16) auto 0;
+	}
+	&__heading {
+		@include fontSettings(vwl(120),700,vwl(120),none,$white-color);
+		padding-top: vwl(93);
+		padding-left: vwl(80);
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(64),700,vwt(68),none,$white-color);
+			padding-top: vwt(52);
+			padding-left: vwt(40);
+		}
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(24),700,vwp(24),none,$white-color);
+			padding-top: vwp(18);
+			padding-left: vwp(16);
+		}
+	}
+	&__dop-text {
+		@include fontSettings(vwl(40),700,vwl(47),none,$white-color);
+		background-color: $primary-color;
+		padding: vwl(24) vwl(48);
+		border-radius: vwl(100);
+		@include positionSettings(absolute,vwl(292),none,none,vwl(820));
+		transform: rotate(-6.38deg);
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(20),700,vwt(23),none,$white-color);
+			padding: vwt(14) vwt(28);
+			border-radius: vwt(100);
+			@include positionSettings(absolute,vwt(168),none,none,vwt(434));
+			transform: matrix(1, -0.06, 0.06, 1, 0, 0);
+		}
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(8),700,vwp(9),none,$white-color);
+			padding: vwp(4) vwp(8);
+			border-radius: vwp(100);
+			@include positionSettings(absolute,vwp(58),none,none,vwp(158));
+			transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+		}
+	}
+	&__dog {
+		@include sizeSettings(vwl(456), vwl(643));
+		@include positionSettings(absolute,vwl(315),none,none,vwl(1400));
+		@media (max-width: 1024px) {
+			@include sizeSettings(vwt(240), vwt(338));
+			@include positionSettings(absolute,vwt(162),none,none,vwt(736));
+		}
+		@media (max-width: 390px) {
+			@include sizeSettings(vwp(88), vwp(124));
+			@include positionSettings(absolute,vwp(58),none,none,vwp(270));
+		}
+	}
+}
+
+.card-reviews {
+	padding-top: vwl(32);
+	background-color: $white-color;
+	border-radius: vwl(40);
+	box-shadow: vwl(8) vwl(8) vwl(24) vwl(8) rgba(0, 0, 0, 0.08);
+	@include sizeSettings(vwl(640), vwl(360));
+	@include positionSettings(absolute,vwl(553),none,none,vwl(80));
+	@media (max-width: 1024px) {
+		padding-top: vwt(16);
+		border-radius: vwt(20);
+		box-shadow: vwt(4) vwt(4) vwt(12) vwt(4) rgba(0, 0, 0, 0.08);
+		@include sizeSettings(vwt(336), vwt(189));
+		@include positionSettings(absolute,vwt(291),none,none,vwt(40));
+	}
+	@media (max-width: 390px) {
+		padding-top: vwp(4);
+		border-radius: vwp(8);
+		box-shadow: vwp(1) vwp(1) vwp(4) vwp(1) rgba(0, 0, 0, 0.08);
+		@include sizeSettings(vwp(124), vwp(68));
+		@include positionSettings(absolute,vwp(108),none,none,vwp(16));
+	}
+	&__top {
+		@include flexSettings(flex,row,center,center,vwl(213));
+		@media (max-width: 1024px) {
+			@include flexSettings(flex,row,center,center,vwt(110));
+		}
+		@media (max-width: 390px) {
+			@include flexSettings(flex,row,center,center,vwp(43));
+		}
+		&-number {
+			@include fontSettings(vwl(96),700,vwl(120),none,$secondary-color);
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(48),700,vwt(64),none,$secondary-color);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(16),700,vwp(24),none,$secondary-color);
+			}
+		}
+		&-icon {
+			@include sizeSettings(vwl(108), vwl(108));
+			@media (max-width: 1024px) {
+				@include sizeSettings(vwt(56), vwt(56));
+			}
+			@media (max-width: 390px) {
+				@include sizeSettings(vwp(20), vwp(20));
+			}
+		}
+	}
+	&__text {
+		padding-top: vwl(12);
+		padding-left: vwl(40);
+		@include fontSettings(vwl(60),700,vwl(70),none,$primary-color);
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(32),700,vwt(37),none,$primary-color);
+			padding-top: vwt(12);
+			padding-left: vwt(24);
+		}
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(12),700,vwp(14),none,$primary-color);
+			padding-top: vwp(4);
+			padding-left: vwp(8);
+		}
+	}
+}
+// Hero end
+
+// Reviews start
+.reviews-row {
+	@include flexSettings(flex,row,center,center,vwl(32));
+	padding-top: vwl(32);
+	@media (max-width: 1024px) {
+		@include flexSettings(flex,column,center,center,vwt(24));
+		padding-top: vwt(24);
+	}
+	@media (max-width: 390px) {
+		@include flexSettings(flex,column,center,center,vwp(16));
+		padding-top: vwp(16);
+	}
+}
+
+.reviews-block {
+	@include sizeSettings(vwl(912), vwl(912));
+	background-color: $primary-color;
+	border-radius: vwl(64);
+	@media (max-width: 1024px) {
+		@include sizeSettings(vwt(976), vwt(976));
+		border-radius: vwt(48);
+	}
+	@media (max-width: 390px) {
+		@include sizeSettings(vwp(358), vwp(358));
+		border-radius: vwp(20);
+	}
+	&__heading {
+		@include fontSettings(vwl(96),900,vwl(120),none,$white-color);
+		padding-top: vwl(96);
+		padding-left: vwl(48);
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(96),900,vwt(120),none,$white-color);
+			padding-top: vwt(82);
+			padding-left: vwt(48);
+		}
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(32),900,vwp(40),none,$white-color);
+			padding-top: vwp(32);
+			padding-left: vwp(20);
+		}
+	}
+	&__toggle {
+		padding-top: vwl(348);
+		@include flexSettings(flex,row,center,center,vwl(24));
+		@media (max-width: 1024px) {
+			padding-top: vwt(408);
+			@include flexSettings(flex,row,center,center,vwt(24));
+		}
+		@media (max-width: 390px) {
+			padding-top: vwp(148);
+			@include flexSettings(flex,row,center,center,vwp(10));
+		}
+		&-dot {
+			cursor: pointer;
+			height: vwl(28);
+			width: vwl(28);
+			background-color: $gray-color;
+			border-radius: vwl(100);
+			@media (max-width: 1024px) {
+				height: vwt(32);
+				width: vwt(32);
+				border-radius: vwt(100);
+			}
+			@media (max-width: 390px) {
+				height: vwp(12);
+				width: vwp(12);
+				border-radius: vwp(100);
+			}
+			&.active,
+			&:hover {
+				background-color: $white-color;
+				transition: all .3s ease;
+			}
+		}
+	}
+}
+
+.carusel-review {
+	position: relative;
+	&__card {
+		width: vwl(816);
+		height: vwl(217);
+		position: absolute;
+		top: vwl(96);
+		left: vwl(48);
+		@media (max-width: 1024px) {
+			width: vwt(873);
+			height: vwt(233);
+			top: vwt(132);
+			left: vwt(51);
+		}
+		@media (max-width: 390px) {
+			width: vwp(320);
+			height: vwp(84);
+			top: vwp(48);
+			left: vwp(19);
+		}
+	}
+}
+
+.building-image {
+	@include sizeSettings(vwl(912), vwl(912));
+	border-radius: vwl(64);
+	&:hover {
+		cursor: pointer;
+		transform: scale(1.02);
+		transition: transform .8s ease;
+	}
+	@media (max-width: 1024px) {
+		@include sizeSettings(vwt(976), vwt(976));
+		border-radius: vwt(48);
+	}
+	@media (max-width: 390px) {
+		@include sizeSettings(vwp(358), vwp(358));
+		border-radius: vwp(20);
+	}
+}
+// Reviews end
+
+// Price start
+.price-row {
+	@include flexSettings(flex,row,center,center,vwl(32));
+	padding-top: vwl(32);
+	@media (max-width: 1024px) {
+		@include flexSettings(flex,column,center,center,vwt(24));
+		padding-top: vwt(24);
+	}
+	@media (max-width: 390px) {
+		@include flexSettings(flex,column,center,center,vwp(16));
+		padding-top: vwp(16);
+	}
+}
+
+.price-block {
+	@include sizeSettings(vwl(912), vwl(912));
+	background-color: $secondary-color;
+	border-radius: vwl(64);
+	position: relative;
+	@media (max-width: 1024px) {
+		@include sizeSettings(vwt(976), vwt(976));
+		border-radius: vwt(48);
+	}
+	@media (max-width: 390px) {
+		@include sizeSettings(vwp(358), vwp(358));
+		border-radius: vwp(20);
+	}
+	&__heading {
+		@include fontSettings(vwl(96),900,vwl(120),none,$white-color);
+		padding-top: vwl(96);
+		padding-left: vwl(48);
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(96),900,vwt(120),none,$white-color);
+			padding-top: vwt(82);
+			padding-left: vwt(48);
+		}
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(32),900,vwp(40),none,$white-color);
+			padding-top: vwp(32);
+			padding-left: vwp(20);
+		}
+	}
+	&__text {
+		@include fontSettings(vwl(48),700,vwl(68),none,$white-color);
+		padding-top: vwl(89);
+		padding-left: vwl(64);
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(48),700,vwt(68),none,$white-color);
+			padding-top: vwt(135);
+			padding-left: vwt(69);
+		}
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(16),700,vwp(24),none,$white-color);
+			padding-top: vwp(48);
+			padding-left: vwp(25);
+		}
+	}
+	&__btn-start-learn {
+		@include fontSettings(vwl(40),700,vwl(47),none,$white-color);
+		background-color: $primary-color;
+		border: 0;
+		border-radius: vwl(100);
+		padding: vwl(24) vwl(322);
+		margin-top: vwl(68);
+		margin-left: vwl(64);
+		display: inline-block;
+		&:hover {
+			background-color: $primary-color-hover;
+			transition: all .2s linear;
+		}
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(40),700,vwt(47),none,$white-color);
+			border-radius: vwt(100);
+			padding: vwt(28) vwt(350);
+			margin-top: vwt(68);
+			margin-left: vwt(69);
+		}
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(16),700,vwp(19),none,$white-color);
+			border-radius: vwp(100);
+			padding: vwp(10) vwp(126);
+			margin-top: vwp(32);
+			margin-left: vwp(25);
+		}
+	}
+	&__icon-sale {
+		@include sizeSettings(vwl(164),vwl(164));
+		@include positionSettings(absolute,vwl(320),none,none,vwl(684));
+		transform: rotate(8deg);
+		@media (max-width: 1024px) {
+			@include sizeSettings(vwt(175),vwt(175));
+			@include positionSettings(absolute,vwt(328),none,none,vwt(728));
+			transform: rotate(10deg);
+		}
+		@media (max-width: 390px) {
+			@include sizeSettings(vwp(64),vwp(64));
+			@include positionSettings(absolute,vwp(120),none,none,vwp(266));
+			transform: rotate(8deg);
+		}
+	}
+}
+
+.room-image {
+	@include sizeSettings(vwl(912), vwl(912));
+	border-radius: vwl(64);
+	&:hover {
+		cursor: pointer;
+		transform: scale(1.02);
+		transition: transform .8s ease;
+	}
+	@media (max-width: 1024px) {
+		@include sizeSettings(vwt(976), vwt(976));
+		border-radius: vwt(48);
+	}
+	@media (max-width: 390px) {
+		@include sizeSettings(vwp(358), vwp(358));
+		border-radius: vwp(20);
+	}
+}
+// Price end
+
+// How to learn start
+.how-to-learn {
+	@include sizeSettings(vwl(1856),vwl(1040));
+	background-color: $primary-color;
+	border-radius: vwl(64);
+	margin: vwl(32) auto 0;
+	@media (max-width: 1024px) {
+		@include sizeSettings(vwt(976),vwt(1976));
+		border-radius: vwt(40);
+		margin: vwt(24) auto 0;
+	}
+	@media (max-width: 390px) {
+		@include sizeSettings(vwp(358),vwp(720));
+		border-radius: vwp(20);
+		margin: vwp(16) auto 0;
+	}
+	&__heading {
+		@include fontSettings(vwl(96),900,vwl(120),none,$white-color);
+		padding-top: vwl(64);
+		padding-left: vwl(68);
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(96),900,vwt(120),none,$white-color);
+			padding-top: vwt(64);
+			padding-left: vwt(68);
+		}
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(32),900,vwp(40),none,$white-color);
+			padding-top: vwp(32);
+			padding-left: vwp(20);
+			margin-bottom: vwp(32);
+			width: vwp(216);
+			height: vwp(88); // Переделать потом через js перенос слова в заголовке
+		}
+	}
+	&__row-top {
+		padding-top: vwl(64);
+		padding-left: vwl(68);
+		@include flexSettings(flex,row,flex-start,flex-start,vwl(66));
+		@media (max-width: 1024px) {
+			@include flexSettings(flex,column,flex-start,flex-start,vwt(80));
+			padding-top: vwt(64);
+			padding-left: vwt(48);
+		}
+		@media (max-width: 390px) {
+			@include flexSettings(flex,column,flex-start,flex-start,vwp(24));
+			padding-top: vwp(16);
+			padding-left: vwp(20);
+		}
+	}
+	&__row-bottom {
+		padding-top: vwl(80);
+		padding-left: vwl(68);
+		@include flexSettings(flex,row,flex-start,flex-start,vwl(64));
+		@media (max-width: 1024px) {
+			@include flexSettings(flex,column,flex-start,flex-start,vwt(80));
+			padding-top: vwt(80);
+			padding-left: vwt(48);
+		}
+		@media (max-width: 390px) {
+			@include flexSettings(flex,column,flex-start,flex-start,vwp(24));
+			padding-top: vwp(24);
+			padding-left: vwp(20);
+		}
+	}
+	&__content {
+		@include flexSettings(flex,column,flex-start,flex-start,vwl(32));
+		@media (max-width: 1024px) {
+			@include flexSettings(flex,column,flex-start,flex-start,vwt(32));
+		}
+		@media (max-width: 390px) {
+			@include flexSettings(flex,column,flex-start,flex-start,vwp(10));
+		}
+		&-heading {
+			@include flexSettings(flex,row,center,flex-start,vwl(24));
+			@media (max-width: 1024px) {
+				@include flexSettings(flex,row,center,flex-start,vwt(24));
+			}
+			@media (max-width: 390px) {
+				@include flexSettings(flex,row,center,flex-start,vwp(8));
+			}
+			span {
+				background-color: $secondary-color;
+				@include fontSettings(vwl(40),700,vwl(47),none,$white-color);
+				padding: vwl(8) vwl(48);
+				border-radius: vwl(100);
+				@media (max-width: 1024px) {
+					@include fontSettings(vwt(40),700,vwt(47),none,$white-color);
+					padding: vwt(8) vwt(48);
+					border-radius: vwt(100);
+				}
+				@media (max-width: 390px) {
+					@include fontSettings(vwp(16),700,vwp(18),none,$white-color);
+					padding: vwp(5) vwp(17) vwp(3) vwp(17);
+					border-radius: vwp(100);
+				}
+			}
+			h3 {
+				@include fontSettings(vwl(60),700,vwl(70),none,$white-color);
+				@media (max-width: 1024px) {
+					@include fontSettings(vwt(60),700,vwt(70),none,$white-color);
+				}
+				@media (max-width: 390px) {
+					@include fontSettings(vwp(20),700,vwp(23),none,$white-color);
+				}
+			}
+		}
+		&-text {
+			@include fontSettings(vwl(32),700,vwl(44),none,$white-color);
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(32),700,vwt(44),none,$white-color);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(12),700,vwp(16),none,$white-color);
+			}
+		}
+	}
+}
+// How to learn end
+
+// Facts about school start
+.facts-about-school {
+	padding-top: vwl(96);
+	@media (max-width: 1024px) {
+		padding-top: vwt(64);
+	}
+	@media (max-width: 390px) {
+		padding-top: vwp(26);
+	}
+	&__heading {
+		@include fontSettings(vwl(96),700,vwl(120),none,$primary-color);
+		padding-left: vwl(32);
+		@media (max-width: 1024px) {
+			@include fontSettings(vwt(96),700,vwt(120),none,$primary-color);
+			padding-left: vwt(24);
+		}
+		@media (max-width: 390px) {
+			@include fontSettings(vwp(48),700,vwp(68),none,$primary-color);
+			padding-left: vwp(16);
+		}
+		span {
+			color: $secondary-color;
+		}
+	}
+	&__cards-row {
+		@include flexSettings(flex,row,center,center,vwl(32));
+		padding-top: vwl(64);
+		@media (max-width: 1024px) {
+			@include flexSettings(flex,row,center,center,vwt(24));
+			flex-wrap: wrap;
+			padding-top: vwt(32);
+		}
+		@media (max-width: 390px) {
+			@include flexSettings(flex,column,center,center,vwp(16));
+			padding-top: vwt(16);
+		}
+	}
+	&__card {
+		@include sizeSettings(vwl(440),vwl(440));
+		border-radius: vwl(40);
+		@include flexSettings(flex,column,center,center,0);
+		@media (max-width: 1024px) {
+			@include sizeSettings(vwt(476),vwt(476));
+			border-radius: vwt(40);
+		}
+		@media (max-width: 390px) {
+			@include sizeSettings(vwp(358),vwp(358));
+			border-radius: vwp(24);
+		}
+		h3 {
+			@include fontSettings(vwl(96),700,vwl(120),none,$white-color);
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(96),700,vwt(120),none,$white-color);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(72),700,vwp(90),none,$white-color);
+			}
+		}
+		span {
+			@include fontSettings(vwl(48),700,vwl(56),none,$white-color);
+			text-align: center;
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(48),700,vwt(56),none,$white-color);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(36),700,vwp(42),none,$white-color);
+			}
+		}
+	}
+	&__card_blue {
+		background-color: $primary-color;
+	}
+	&__card_orange {
+		background-color: $secondary-color;
+	}
+}
+// Facts about school end
+// Price block start
+.price-block-second {
+	@include flexSettings(flex,row,center,center,vwl(224));
+	padding-top: vwl(138);
+	@media (max-width: 1024px) {
+		padding-top: vwt(64);
+		padding-left: vwt(24);
+		@include flexSettings(flex,column,flex-start,center,vwt(40));
+	}
+	@media (max-width: 390px) {
+		padding-top: vwp(24);
+		padding-left: vwp(16);
+		@include flexSettings(flex,column,flex-start,center,vwp(20));
+	}
+	&__left {
+		@include flexSettings(flex,column,flex-start,flex-start,vwl(40));
+		@media (max-width: 1024px) {
+			@include flexSettings(flex,column,flex-start,flex-start,vwt(40));
+		}
+		@media (max-width: 390px) {
+			@include flexSettings(flex,column,flex-start,flex-start,vwp(12));
+		}
+		&-heading {
+			@include fontSettings(vwl(72),700,vwl(90),none,$primary-color);
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(72),700,vwt(90),none,$primary-color);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(32),700,vwp(40),none,$primary-color);
+			}
+			span {
+				color: $secondary-color;
+			}
+		}
+		&-time {
+			@include fontSettings(vwl(48),700,vwl(56),none,$white-color);
+			background-color: $primary-color;
+			padding: vwl(20) vwl(40);
+			border-radius: vwl(100);
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(48),700,vwt(56),none,$white-color);
+				padding: vwt(20) vwt(40);
+				border-radius: vwt(100);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(20),700,vwp(24),none,$white-color);
+				padding: vwp(10) vwp(28);
+				border-radius: vwp(100);
+			}
+		}
+	}
+	&__right {
+		@include sizeSettings(vwl(717),vwl(434));
+		border-radius: vwl(32);
+		background-color: $primary-color;
+		@media (max-width: 1024px) {
+			@include sizeSettings(vwt(717),vwt(434));
+			border-radius: vwt(32);
+		}
+		@media (max-width: 390px) {
+			@include sizeSettings(vwp(340),vwp(204));
+			border-radius: vwp(16);
+		}
+		&-price {
+			@include flexSettings(flex,row,center,flex-start,vwl(57));
+			padding-top: vwl(40);
+			padding-left: vwl(48);
+			@media (max-width: 1024px) {
+				@include flexSettings(flex,row,center,flex-start,vwt(57));
+				padding-top: vwt(40);
+				padding-left: vwt(48);
+			}
+			@media (max-width: 390px) {
+				@include flexSettings(flex,row,center,flex-start,vwp(24));
+				padding-top: vwp(20);
+				padding-left: vwp(20);
+			}
+			&_now {
+				@include fontSettings(vwl(72),700,vwl(90),none,$white-color);
+				@media (max-width: 1024px) {
+					@include fontSettings(vwt(72),700,vwt(90),none,$white-color);
+				}
+				@media (max-width: 390px) {
+					@include fontSettings(vwp(32),700,vwp(40),none,$white-color);
+				}
+			}
+			&_old {
+				@include fontSettings(vwl(72),700,vwl(90),line-through,$white-color);
+				@media (max-width: 1024px) {
+					@include fontSettings(vwt(72),700,vwt(90),line-through,$white-color);
+				}
+				@media (max-width: 390px) {
+					@include fontSettings(vwp(32),700,vwp(40),line-through,$white-color);
+				}
+			}
+		}
+		&-month {
+			@include fontSettings(vwl(40),700,vwl(47),none,$white-color);
+			padding-left: vwl(48);
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(40),700,vwt(40),none,$white-color);
+				padding-left: vwt(48);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(16),700,vwp(19),none,$white-color);
+				padding-left: vwp(20);
+			}
+		}
+		&-text {
+			@include fontSettings(vwl(24),700,vwl(30),none,$white-color);
+			opacity: .8;
+			padding-top: vwl(24);
+			padding-left: vwl(48);
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(24),700,vwt(30),none,$white-color);
+				padding-top: vwt(24);
+				padding-left: vwt(48);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(12),700,vwp(16),none,$white-color);
+				padding-top: vwp(12);
+				padding-left: vwp(20);
+			}
+		}
+		&-btn-learn {
+			@include fontSettings(vwl(24),700,vwl(30),none,$white-color);
+			border: 0;
+			background-color: $secondary-color;
+			padding: vwl(18) vwl(32);
+			border-radius: vwl(100);
+			margin-top: vwl(40);
+			margin-left: vwl(48);
+			&:hover {
+				background-color: $secondary-color-hover;
+				transition: all .2s linear;
+				cursor: pointer;
+			}
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(24),700,vwt(30),none,$white-color);
+				padding: vwt(18) vwt(32);
+				border-radius: vwt(100);
+				margin-top: vwt(40);
+				margin-left: vwt(48);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(12),700,vwp(16),none,$white-color);
+				padding: vwp(8) vwp(16);
+				border-radius: vwp(100);
+				margin-top: vwp(18);
+				margin-left: vwp(20);
+			}
+		}
+	}
+}
+// Price block end
+// Footer start
+.footer {
+	@include flexSettings(flex,row,center,center,vwl(623));
+	padding-top: vwl(36);
+	padding-bottom: vwl(36);
+	margin-top: vwl(164);
+	background-color: $gray-color;
+	@media (max-width: 1024px) {
+		@include flexSettings(flex,row,center,center,vwt(131));
+		padding-top: vwt(30);
+		padding-bottom: vwt(30);
+		margin-top: vwt(140);
+	}
+	@media (max-width: 390px) {
+		@include flexSettings(flex,row,center,center,vwt(131));
+		padding-top: vwp(16);
+		padding-bottom: vwp(16);
+		margin-top: vwp(64);
+	}
+	&__left {
+		@include flexSettings(flex,row,center,center,vwl(16));
+		@media (max-width: 1024px) {
+			@include flexSettings(flex,row,center,center,vwt(12));
+		}
+		@media (max-width: 390px) {
+			@include flexSettings(flex,row,center,center,vwp(12));
+		}
+		&-text {
+			@include fontSettings(vwl(32),700,vwl(44),none,$white-color);
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(32),700,vwt(44),none,$white-color);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(20),700,vwp(28),none,$white-color);
+			}
+		}
+	}
+	&__right {
+		@include flexSettings(flex,row,center,flex-start,vwl(48));
+		@media (max-width: 1024px) {
+			@include flexSettings(flex,row,center,flex-start,vwt(32));
+		}
+		@media (max-width: 390px) {
+			@include flexSettings(flex,column,flex-start,flex-start,vwp(2));
+		}
+		&-nav {
+			@include fontSettings(vwl(32),700,vwl(44),none,$white-color);
+			&:hover {
+				color: $light-gray-color;
+			}
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(20),700,vwt(44),none,$white-color);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwp(12),700,vwp(16),none,$white-color);
+			}
+		}
+	}
+}
+// Footer end
+
+// Modal building image start
+.modal-image-building-container {
+	@include sizeSettings(100%, 100%);
+	padding-top: vwl(50);
+	display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+	@media (max-width: 1024px) {
+		padding-top: vwt(75);
+	}
+	@media (max-width: 390px) {
+		padding-top: vwp(100);
+	}
+}
+
+.modal-image-building-container__close {
+	position: absolute;
+  top: vwl(15);
+  right: vwl(35);
+  color: #f1f1f1;
+  font-size: vwl(96);
+  font-weight: bold;
+  transition: 0.3s;
+	@media (max-width: 1024px) {
+		top: vwt(15);
+		right: vwt(35);
+		font-size: vwt(64);
+	}
+	@media (max-width: 390px) {
+		top: vwp(15);
+		right: vwp(35);
+		font-size: vwp(48);
+	}
+	&:hover,
+	&:focus {
+		color: #bbb;
+		text-decoration: none;
+		cursor: pointer;
+	}
+}
+
+.modal-image-building-container__img {
+	margin: auto;
+  display: block;
+  width: 100%;
+  max-width: vwl(800);
+	animation: zoom .8s ease;
+	@media (max-width: 1024px) {
+		max-width: vwt(800);
+	}
+	@media (max-width: 390px) {
+		max-width: vwp(324);
+	}
+}
+// // Modal building image end
+
+// Modal room image start
+.modal-image-room-container {
+	@include sizeSettings(100%, 100%);
+	padding-top: vwl(50);
+	display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+	@media (max-width: 1024px) {
+		padding-top: vwt(75);
+	}
+	@media (max-width: 390px) {
+		padding-top: vwp(100);
+	}
+}
+
+.modal-image-room-container__close {
+	position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: vwl(96);
+  font-weight: bold;
+  transition: 0.3s;
+	@media (max-width: 1024px) {
+		top: vwt(15);
+		right: vwt(35);
+		font-size: vwt(64);
+	}
+	@media (max-width: 390px) {
+		top: vwp(15);
+		right: vwp(35);
+		font-size: vwp(48);
+	}
+
+	&:hover,
+	&:focus {
+		color: #bbb;
+		text-decoration: none;
+		cursor: pointer;
+	}
+}
+
+.modal-image-room-container__img {
+	margin: auto;
+  display: block;
+  width: 100%;
+  max-width: vwl(800);
+	animation: zoom .8s ease;
+	@media (max-width: 1024px) {
+		max-width: vwt(800);
+	}
+	@media (max-width: 390px) {
+		max-width: vwp(324);
+	}
+}
+
+.modal-image-room-container__active {
+	display: block;
+}
+// Modal room image end
+
+// Modal request start
+.modal-request {
+	display: none;
+	position: fixed;
+	z-index: 2;
+	left: 0;
+	top: 0;
+	@include sizeSettings(100%, 100%);
+	overflow: auto;
+	background-color: rgba(0,0,0, 0.7);
+	&__content {
+		@include sizeSettings(vwl(960), vwl(640));
+		background-color: $white-color;
+		border-radius: vwl(40);
+		margin: 7% auto 0;
+		@media (max-width: 1024px) {
+			@include sizeSettings(vwt(960), vwt(640));
+			border-radius: vwt(40);
+		}
+		@media (max-width: 390px) {
+			@include sizeSettings(vwp(358), vwp(239));
+			border-radius: vwp(16);
+		}
+		&-head {
+			padding-top: vwl(40);
+			padding-left: vwl(40);
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			gap: vwl(185);
+			@media (max-width: 1024px) {
+				padding-top: vwt(40);
+				padding-left: vwt(40);
+				gap: vwt(185);
+			}
+			@media (max-width: 390px) {
+				padding-top: vwp(16);
+				padding-left: vwp(16);
+				gap: vwp(47);
+			}
+			&-text {
+				@include fontSettings(vwl(40),700,vwl(48),none,$black-color);
+				@media (max-width: 1024px) {
+					@include fontSettings(vwt(40),700,vwt(48),none,$black-color);
+				}
+				@media (max-width: 390px) {
+					@include fontSettings(vwp(16),700,vwp(20),none,$black-color);
+				}
+			}
+			&-back {
+				font-size: vwl(80);
+				cursor: pointer;
+				color: $primary-color;
+				margin-top: -2%;
+				&:hover {
+					color: $primary-color-hover;
+					transform: scale(1.3);
+					transition: transform .3s ease;
+				}
+				@media (max-width: 1024px) {
+					font-size: vwt(80);
+					margin-top: -2%;
+				}
+				@media (max-width: 390px) {
+					font-size: vwp(32);
+					margin-top: -3%;
+				}
+			}
+		}
+		&-main-text {
+			@include fontSettings(vwl(20),700,vwl(28),none,$dark-gray-color);
+			padding-top: vwl(32);
+			padding-left: vwl(40);
+			@media (max-width: 1024px) {
+				@include fontSettings(vwt(20),700,vwt(28),none,$dark-gray-color);
+				padding-top: vwt(32);
+				padding-left: vwt(40);
+			}
+			@media (max-width: 390px) {
+				@include fontSettings(vwt(8),700,vwt(12),none,$dark-gray-color);
+				padding-top: vwp(8);
+				padding-left: vwp(16);
+			}
+		}
+		&-input-name {
+			margin-top: vwl(34);
+			margin-left: vwl(40);
+			border: none;
+			background-color: $light-gray-color;
+			@include sizeSettings(vwl(480), vwl(64));
+			border-radius: vwl(16);
+			@include fontSettings(vwl(24),700,vwl(28),none,$black-color);
+			padding-left: vwl(24);
+			outline: none;
+			&:hover {
+				border: 1px solid $gray-color;
+				transition: all 1s linear;
+			}
+			@media (max-width: 1024px) {
+				margin-top: vwt(34);
+				margin-left: vwt(40);
+				@include sizeSettings(vwt(480), vwt(64));
+				border-radius: vwt(16);
+				@include fontSettings(vwt(24),700,vwt(28),none,$black-color);
+				padding-left: vwt(24);
+			}
+			@media (max-width: 390px) {
+				margin-top: vwp(12);
+				margin-left: vwp(16);
+				@include sizeSettings(vwp(180), vwp(24));
+				border-radius: vwp(6);
+				@include fontSettings(vwp(8),700,vwp(10),none,$black-color);
+				padding-left: vwp(8);
+			}
+			&::placeholder {
+				@include fontSettings(vwl(24),700,vwl(28),none,$gray-color);
+				@media (max-width: 1024px) {
+					@include fontSettings(vwt(24),700,vwt(28),none,$gray-color);
+				}
+				@media (max-width: 390px) {
+					@include fontSettings(vwp(8),700,vwp(10),none,$gray-color);
+				}
+			}
+		}
+		&-input-tel {
+			margin-top: vwl(16);
+			margin-left: vwl(40);
+			border: none;
+			background-color: $light-gray-color;
+			width: vwl(480);
+			height: vwl(64);
+			border-radius: vwl(16);
+			@include fontSettings(vwl(24),700,vwl(28),none,$black-color);
+			padding-left: vwl(24);
+			outline: none;
+			&:hover {
+				border: 1px solid $gray-color;
+				transition: all 1s linear;
+			}
+			@media (max-width: 1024px) {
+				margin-top: vwt(16);
+				margin-left: vwt(40);
+				@include sizeSettings(vwt(480), vwt(64));
+				border-radius: vwt(16);
+				@include fontSettings(vwt(24),700,vwt(28),none,$black-color);
+				padding-left: vwt(24);
+			}
+			@media (max-width: 390px) {
+				margin-top: vwp(8);
+				margin-left: vwp(16);
+				@include sizeSettings(vwp(180), vwp(24));
+				border-radius: vwp(6);
+				@include fontSettings(vwp(8),700,vwp(10),none,$black-color);
+				padding-left: vwp(8);
+			}
+			&::placeholder {
+				@include fontSettings(vwl(24),700,vwl(28),none,$gray-color);
+				@media (max-width: 1024px) {
+					@include fontSettings(vwt(24),700,vwt(28),none,$gray-color);
+				}
+				@media (max-width: 390px) {
+					@include fontSettings(vwp(8),700,vwp(10),none,$gray-color);
+				}
+			}
+		}
+		&-input-mail {
+			margin-top: vwl(16);
+			margin-left: vwl(40);
+			border: none;
+			background-color: $light-gray-color;
+			width: vwl(480);
+			height: vwl(64);
+			border-radius: vwl(16);
+			@include fontSettings(vwl(24),700,vwl(28),none,$black-color);
+			padding-left: vwl(24);
+			outline: none;
+			&:hover {
+				border: 1px solid $gray-color;
+				transition: all 1s linear;
+			}
+			@media (max-width: 1024px) {
+				margin-top: vwt(16);
+				margin-left: vwt(40);
+				@include sizeSettings(vwt(480), vwt(64));
+				border-radius: vwt(16);
+				@include fontSettings(vwt(24),700,vwt(28),none,$black-color);
+				padding-left: vwt(24);
+			}
+			@media (max-width: 390px) {
+				margin-top: vwp(8);
+				margin-left: vwp(16);
+				@include sizeSettings(vwp(180), vwp(24));
+				border-radius: vwp(6);
+				@include fontSettings(vwp(8),700,vwp(10),none,$black-color);
+				padding-left: vwp(8);
+			}
+			&::placeholder {
+				@include fontSettings(vwl(24),700,vwl(28),none,$gray-color);
+				@media (max-width: 1024px) {
+					@include fontSettings(vwt(24),700,vwt(28),none,$gray-color);
+				}
+				@media (max-width: 390px) {
+					@include fontSettings(vwp(8),700,vwp(10),none,$gray-color);
+				}
+			}
+		}
+		&-btn-send {
+			margin-top: vwl(24);
+			margin-left: vwl(40);
+			@include fontSettings(vwl(24),700,vwl(28),none,$white-color);
+			border: none;
+			background-color: $primary-color;
+			padding: vwl(16) vwl(40);
+			border-radius: vwl(100);
+			display: block;
+			&:hover {
+				background-color: $primary-color-hover;
+				transition: all .2s linear;
+			}
+			@media (max-width: 1024px) {
+				margin-top: vwt(24);
+				margin-left: vwt(40);
+				@include fontSettings(vwt(24),700,vwt(28),none,$white-color);
+				padding: vwt(16) vwt(40);
+				border-radius: vwt(100);
+			}
+			@media (max-width: 390px) {
+				margin-top: vwp(8);
+				margin-left: vwp(16);
+				@include fontSettings(vwp(8),700,vwp(10),none,$white-color);
+				padding: vwp(5) vwp(11);
+				border-radius: vwp(100);
+			}
+		}
+		&-dop-text {
+			display: block;
+			margin-top: vwl(16);
+			margin-left: vwl(40);
+			@include fontSettings(vwl(16),700,vwl(20),none,$gray-color);
+			@media (max-width: 1024px) {
+				margin-top: vwt(16);
+				margin-left: vwt(40);
+				@include fontSettings(vwt(16),700,vwt(20),none,$gray-color);
+			}
+			@media (max-width: 390px) {
+				margin-top: vwp(6);
+				margin-left: vwp(16);
+				@include fontSettings(vwp(6),700,vwp(8),none,$gray-color);
+			}
+			span {
+				cursor: pointer;
+				text-decoration: underline;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.modal-request__active {
+	display: block;
+}
+// Modal request end
+
+// Animation start
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+// Animation end
