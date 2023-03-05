@@ -1570,7 +1570,7 @@ span {
     @media (max-width: 1024px) {
       .modal-request__content {
         width: 93.75vw;
-        height: 65.625vw;
+        height: 62.5vw;
         border-radius: 3.90625vw; } }
     @media (max-width: 390px) {
       .modal-request__content {
@@ -1589,6 +1589,11 @@ span {
           padding-top: 3.90625vw;
           padding-left: 3.90625vw;
           gap: 18.06641vw; } }
+      @media (max-width: 390px) {
+        .modal-request__content-head {
+          padding-top: 4.10256vw;
+          padding-left: 4.10256vw;
+          gap: 12.05128vw; } }
       .modal-request__content-head-text {
         font-size: 2.08333vw;
         font-weight: 700;
@@ -1602,6 +1607,13 @@ span {
             line-height: 4.6875vw;
             text-decoration: none;
             color: #111112; } }
+        @media (max-width: 390px) {
+          .modal-request__content-head-text {
+            font-size: 4.10256vw;
+            font-weight: 700;
+            line-height: 5.12821vw;
+            text-decoration: none;
+            color: #111112; } }
       .modal-request__content-head-back {
         font-size: 4.16667vw;
         cursor: pointer;
@@ -1609,6 +1621,9 @@ span {
         @media (max-width: 1024px) {
           .modal-request__content-head-back {
             font-size: 7.8125vw; } }
+        @media (max-width: 390px) {
+          .modal-request__content-head-back {
+            font-size: 10.25641vw; } }
     .modal-request__content-main-text {
       font-size: 1.04167vw;
       font-weight: 700;
@@ -1626,6 +1641,15 @@ span {
           color: #6C6D76;
           padding-top: 3.125vw;
           padding-left: 3.90625vw; } }
+      @media (max-width: 390px) {
+        .modal-request__content-main-text {
+          font-size: 0.78125vw;
+          font-weight: 700;
+          line-height: 1.17188vw;
+          text-decoration: none;
+          color: #6C6D76;
+          padding-top: 2.05128vw;
+          padding-left: 4.10256vw; } }
     .modal-request__content-input-name {
       margin-top: 1.77083vw;
       margin-left: 2.08333vw;
@@ -1654,6 +1678,19 @@ span {
           text-decoration: none;
           color: #111112;
           padding-left: 2.34375vw; } }
+      @media (max-width: 390px) {
+        .modal-request__content-input-name {
+          margin-top: 3.07692vw;
+          margin-left: 4.10256vw;
+          width: 46.15385vw;
+          height: 6.15385vw;
+          border-radius: 1.53846vw;
+          font-size: 2.05128vw;
+          font-weight: 700;
+          line-height: 2.5641vw;
+          text-decoration: none;
+          color: #111112;
+          padding-left: 2.05128vw; } }
       .modal-request__content-input-name::placeholder {
         font-size: 1.25vw;
         font-weight: 700;
@@ -1665,6 +1702,13 @@ span {
             font-size: 2.34375vw;
             font-weight: 700;
             line-height: 2.73438vw;
+            text-decoration: none;
+            color: #B2B2BB; } }
+        @media (max-width: 390px) {
+          .modal-request__content-input-name::placeholder {
+            font-size: 2.05128vw;
+            font-weight: 700;
+            line-height: 2.5641vw;
             text-decoration: none;
             color: #B2B2BB; } }
     .modal-request__content-input-tel {
@@ -1684,7 +1728,7 @@ span {
       outline: none; }
       @media (max-width: 1024px) {
         .modal-request__content-input-tel {
-          margin-top: 3.32031vw;
+          margin-top: 1.5625vw;
           margin-left: 3.90625vw;
           width: 46.875vw;
           height: 6.25vw;
@@ -1695,6 +1739,19 @@ span {
           text-decoration: none;
           color: #111112;
           padding-left: 2.34375vw; } }
+      @media (max-width: 390px) {
+        .modal-request__content-input-tel {
+          margin-top: 2.05128vw;
+          margin-left: 4.10256vw;
+          width: 46.15385vw;
+          height: 6.15385vw;
+          border-radius: 1.53846vw;
+          font-size: 2.05128vw;
+          font-weight: 700;
+          line-height: 2.5641vw;
+          text-decoration: none;
+          color: #111112;
+          padding-left: 2.05128vw; } }
       .modal-request__content-input-tel::placeholder {
         font-size: 1.25vw;
         font-weight: 700;
@@ -1706,6 +1763,13 @@ span {
             font-size: 2.34375vw;
             font-weight: 700;
             line-height: 2.73438vw;
+            text-decoration: none;
+            color: #B2B2BB; } }
+        @media (max-width: 390px) {
+          .modal-request__content-input-tel::placeholder {
+            font-size: 2.05128vw;
+            font-weight: 700;
+            line-height: 2.5641vw;
             text-decoration: none;
             color: #B2B2BB; } }
     .modal-request__content-input-mail {
@@ -1725,7 +1789,7 @@ span {
       outline: none; }
       @media (max-width: 1024px) {
         .modal-request__content-input-mail {
-          margin-top: 3.32031vw;
+          margin-top: 1.5625vw;
           margin-left: 3.90625vw;
           width: 46.875vw;
           height: 6.25vw;
@@ -1736,6 +1800,19 @@ span {
           text-decoration: none;
           color: #111112;
           padding-left: 2.34375vw; } }
+      @media (max-width: 390px) {
+        .modal-request__content-input-mail {
+          margin-top: 2.05128vw;
+          margin-left: 4.10256vw;
+          width: 46.15385vw;
+          height: 6.15385vw;
+          border-radius: 1.53846vw;
+          font-size: 2.05128vw;
+          font-weight: 700;
+          line-height: 2.5641vw;
+          text-decoration: none;
+          color: #111112;
+          padding-left: 2.05128vw; } }
       .modal-request__content-input-mail::placeholder {
         font-size: 1.25vw;
         font-weight: 700;
@@ -1747,6 +1824,13 @@ span {
             font-size: 2.34375vw;
             font-weight: 700;
             line-height: 2.73438vw;
+            text-decoration: none;
+            color: #B2B2BB; } }
+        @media (max-width: 390px) {
+          .modal-request__content-input-mail::placeholder {
+            font-size: 2.05128vw;
+            font-weight: 700;
+            line-height: 2.5641vw;
             text-decoration: none;
             color: #B2B2BB; } }
     .modal-request__content-btn-send {
@@ -1773,6 +1857,17 @@ span {
           color: #FEFEFE;
           padding: 1.5625vw 3.90625vw;
           border-radius: 9.76562vw; } }
+      @media (max-width: 390px) {
+        .modal-request__content-btn-send {
+          margin-top: 2.05128vw;
+          margin-left: 4.10256vw;
+          font-size: 2.05128vw;
+          font-weight: 700;
+          line-height: 2.5641vw;
+          text-decoration: none;
+          color: #FEFEFE;
+          padding: 1.28205vw 2.82051vw;
+          border-radius: 25.64103vw; } }
     .modal-request__content-dop-text {
       display: block;
       margin-top: 0.83333vw;
@@ -1789,6 +1884,15 @@ span {
           font-size: 1.5625vw;
           font-weight: 700;
           line-height: 1.95312vw;
+          text-decoration: none;
+          color: #B2B2BB; } }
+      @media (max-width: 390px) {
+        .modal-request__content-dop-text {
+          margin-top: 1.53846vw;
+          margin-left: 4.10256vw;
+          font-size: 1.53846vw;
+          font-weight: 700;
+          line-height: 2.05128vw;
           text-decoration: none;
           color: #B2B2BB; } }
       .modal-request__content-dop-text u {

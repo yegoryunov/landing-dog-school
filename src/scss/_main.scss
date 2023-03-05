@@ -984,7 +984,7 @@
 		border-radius: vwl(40);
 		margin: 7% auto 0;
 		@media (max-width: 1024px) {
-			@include sizeSettings(vwt(960), vwt(672));
+			@include sizeSettings(vwt(960), vwt(640));
 			border-radius: vwt(40);
 		}
 		@media (max-width: 390px) {
@@ -1004,7 +1004,9 @@
 				gap: vwt(185);
 			}
 			@media (max-width: 390px) {
-
+				padding-top: vwp(16);
+				padding-left: vwp(16);
+				gap: vwp(47);
 			}
 			&-text {
 				@include fontSettings(vwl(40),700,vwl(48),none,$black-color);
@@ -1012,7 +1014,7 @@
 					@include fontSettings(vwt(40),700,vwt(48),none,$black-color);
 				}
 				@media (max-width: 390px) {
-	
+					@include fontSettings(vwp(16),700,vwp(20),none,$black-color);
 				}
 			}
 			&-back {
@@ -1023,7 +1025,7 @@
 					font-size: vwt(80);
 				}
 				@media (max-width: 390px) {
-	
+					font-size: vwp(40);
 				}
 			}
 		}
@@ -1037,7 +1039,9 @@
 				padding-left: vwt(40);
 			}
 			@media (max-width: 390px) {
-
+				@include fontSettings(vwt(8),700,vwt(12),none,$dark-gray-color);
+				padding-top: vwp(8);
+				padding-left: vwp(16);
 			}
 		}
 		&-input-name {
@@ -1059,7 +1063,12 @@
 				padding-left: vwt(24);
 			}
 			@media (max-width: 390px) {
-
+				margin-top: vwp(12);
+				margin-left: vwp(16);
+				@include sizeSettings(vwp(180), vwp(24));
+				border-radius: vwp(6);
+				@include fontSettings(vwp(8),700,vwp(10),none,$black-color);
+				padding-left: vwp(8);
 			}
 			&::placeholder {
 				@include fontSettings(vwl(24),700,vwl(28),none,$gray-color);
@@ -1067,7 +1076,7 @@
 					@include fontSettings(vwt(24),700,vwt(28),none,$gray-color);
 				}
 				@media (max-width: 390px) {
-	
+					@include fontSettings(vwp(8),700,vwp(10),none,$gray-color);
 				}
 			}
 		}
@@ -1083,7 +1092,7 @@
 			padding-left: vwl(24);
 			outline: none;
 			@media (max-width: 1024px) {
-				margin-top: vwt(34);
+				margin-top: vwt(16);
 				margin-left: vwt(40);
 				@include sizeSettings(vwt(480), vwt(64));
 				border-radius: vwt(16);
@@ -1091,7 +1100,12 @@
 				padding-left: vwt(24);
 			}
 			@media (max-width: 390px) {
-
+				margin-top: vwp(8);
+				margin-left: vwp(16);
+				@include sizeSettings(vwp(180), vwp(24));
+				border-radius: vwp(6);
+				@include fontSettings(vwp(8),700,vwp(10),none,$black-color);
+				padding-left: vwp(8);
 			}
 			&::placeholder {
 				@include fontSettings(vwl(24),700,vwl(28),none,$gray-color);
@@ -1099,7 +1113,7 @@
 					@include fontSettings(vwt(24),700,vwt(28),none,$gray-color);
 				}
 				@media (max-width: 390px) {
-	
+					@include fontSettings(vwp(8),700,vwp(10),none,$gray-color);
 				}
 			}
 		}
@@ -1115,7 +1129,7 @@
 			padding-left: vwl(24);
 			outline: none;
 			@media (max-width: 1024px) {
-				margin-top: vwt(34);
+				margin-top: vwt(16);
 				margin-left: vwt(40);
 				@include sizeSettings(vwt(480), vwt(64));
 				border-radius: vwt(16);
@@ -1123,7 +1137,12 @@
 				padding-left: vwt(24);
 			}
 			@media (max-width: 390px) {
-
+				margin-top: vwp(8);
+				margin-left: vwp(16);
+				@include sizeSettings(vwp(180), vwp(24));
+				border-radius: vwp(6);
+				@include fontSettings(vwp(8),700,vwp(10),none,$black-color);
+				padding-left: vwp(8);
 			}
 			&::placeholder {
 				@include fontSettings(vwl(24),700,vwl(28),none,$gray-color);
@@ -1131,7 +1150,7 @@
 					@include fontSettings(vwt(24),700,vwt(28),none,$gray-color);
 				}
 				@media (max-width: 390px) {
-	
+					@include fontSettings(vwp(8),700,vwp(10),none,$gray-color);
 				}
 			}
 		}
@@ -1152,7 +1171,11 @@
 				border-radius: vwt(100);
 			}
 			@media (max-width: 390px) {
-
+				margin-top: vwp(8);
+				margin-left: vwp(16);
+				@include fontSettings(vwp(8),700,vwp(10),none,$white-color);
+				padding: vwp(5) vwp(11);
+				border-radius: vwp(100);
 			}
 		}
 		&-dop-text {
@@ -1166,7 +1189,9 @@
 				@include fontSettings(vwt(16),700,vwt(20),none,$gray-color);
 			}
 			@media (max-width: 390px) {
-
+				margin-top: vwp(6);
+				margin-left: vwp(16);
+				@include fontSettings(vwp(6),700,vwp(8),none,$gray-color);
 			}
 			u {
 				cursor: pointer;
@@ -1178,3 +1203,4 @@
 .modal-request__active {
 	display: block;
 }
+// Modal request end
