@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'ALS Schlange Sans Bold';
-	src: local('ALS Schlange Sans Bold'), local('ALS-Schlange-Sans-Bold'),
+	src: local('ALS Schlange Sans Bold'), ('ALS-Schlange-Sans-Bold'),
 			url('../assets/font/ALSSchlangesans-Bold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
@@ -8,7 +8,7 @@
 
 @font-face {
 	font-family: 'ALS Schlange Sans Black';
-	src: local('ALS Schlange Sans Black'), local('ALS-Schlange-Sans-Black'),
+	src: local('ALS Schlange Sans Black'), ('ALS-Schlange-Sans-Black'),
 			url('../assets/font/ALSSchlangesans-Black.woff') format('woff');
 	font-weight: 900;
 	font-style: normal;
